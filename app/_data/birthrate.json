@@ -1,0 +1,249 @@
+{
+  "region": [
+    {
+      "id": "national",
+      "name": "全国",
+      "total": 12004692,
+      "male": 6322003,
+      "female": 5682689
+    },
+    {
+      "id": "bei_jing",
+      "name": "北京",
+      "total": 152864,
+      "male": 79479,
+      "female": 73385
+    },
+    {
+      "id": "tian_jin",
+      "name": "天津",
+      "total": 83097,
+      "male": 43276,
+      "female": 39821
+    },
+    {
+      "id": "he_bei",
+      "name": "河北",
+      "total": 608070,
+      "male": 316857,
+      "female": 291213
+    },
+    {
+      "id": "shan_xi_2",
+      "name": "山西",
+      "total": 288046,
+      "male": 147611,
+      "female": 140435
+    },
+    {
+      "id": "nei_meng_gu",
+      "name": "内蒙古",
+      "total": 173255,
+      "male": 89566,
+      "female": 83689
+    },
+    {
+      "id": "liao_ning",
+      "name": "辽宁",
+      "total": 220318,
+      "male": 113266,
+      "female": 107052
+    },
+    {
+      "id": "ji_lin",
+      "name": "吉林",
+      "total": 116554,
+      "male": 60343,
+      "female": 56211
+    },
+    {
+      "id": "hei_long_jiang",
+      "name": "黑龙江",
+      "total": 119821,
+      "male": 61707,
+      "female": 58114
+    },
+    {
+      "id": "shang_hai",
+      "name": "上海",
+      "total": 124777,
+      "male": 64801,
+      "female": 59976
+    },
+    {
+      "id": "jiang_su",
+      "name": "江苏",
+      "total": 563733,
+      "male": 294029,
+      "female": 269704
+    },
+    {
+      "id": "zhe_jiang",
+      "name": "浙江",
+      "total": 459658,
+      "male": 240940,
+      "female": 218718
+    },
+    {
+      "id": "an_hui",
+      "name": "安徽",
+      "total": 575917,
+      "male": 305604,
+      "female": 270313
+    },
+    {
+      "id": "fu_jian",
+      "name": "福建",
+      "total": 381804,
+      "male": 207241,
+      "female": 174563
+    },
+    {
+      "id": "jiang_xi",
+      "name": "江西",
+      "total": 427441,
+      "male": 233443,
+      "female": 193998
+    },
+    {
+      "id": "shan_dong",
+      "name": "山东",
+      "total": 868496,
+      "male": 458738,
+      "female": 409758
+    },
+    {
+      "id": "he_nan",
+      "name": "河南",
+      "total": 916791,
+      "male": 476784,
+      "female": 440007
+    },
+    {
+      "id": "hu_bei",
+      "name": "湖北",
+      "total": 477594,
+      "male": 254740,
+      "female": 222854
+    },
+    {
+      "id": "hu_nan",
+      "name": "湖南",
+      "total": 566431,
+      "male": 301995,
+      "female": 264436
+    },
+    {
+      "id": "guang_dong",
+      "name": "广东",
+      "total": 1292000,
+      "male": 692476,
+      "female": 599524
+    },
+    {
+      "id": "guang_xi",
+      "name": "广西",
+      "total": 568245,
+      "male": 303315,
+      "female": 264930
+    },
+    {
+      "id": "hai_nan",
+      "name": "海南",
+      "total": 104128,
+      "male": 57303,
+      "female": 46825
+    },
+    {
+      "id": "chong_qing",
+      "name": "重庆",
+      "total": 239633,
+      "male": 124411,
+      "female": 115222
+    },
+    {
+      "id": "si_chuan",
+      "name": "四川",
+      "total": 635353,
+      "male": 330146,
+      "female": 305207
+    },
+    {
+      "id": "gui_zhou",
+      "name": "贵州",
+      "total": 526610,
+      "male": 279552,
+      "female": 247058
+    },
+    {
+      "id": "yun_nan",
+      "name": "云南",
+      "total": 516555,
+      "male": 267614,
+      "female": 248941
+    },
+    {
+      "id": "xi_zang",
+      "name": "西藏",
+      "total": 50723,
+      "male": 26030,
+      "female": 24693
+    },
+    {
+      "id": "shan_xi_1",
+      "name": "陕西",
+      "total": 353175,
+      "male": 183652,
+      "female": 169523
+    },
+    {
+      "id": "gan_su",
+      "name": "甘肃",
+      "total": 263513,
+      "male": 136530,
+      "female": 126983
+    },
+    {
+      "id": "qing_hai",
+      "name": "青海",
+      "total": 67506,
+      "male": 34863,
+      "female": 32643
+    },
+    {
+      "id": "ning_xia",
+      "name": "宁夏",
+      "total": 83255,
+      "male": 42773,
+      "female": 40482
+    },
+    {
+      "id": "xin_jiang",
+      "name": "新疆",
+      "total": 179329,
+      "male": 92918,
+      "female": 86411
+    },
+    {
+      "id": "ao_men",
+      "name": "澳门",
+      "total": 3712,
+      "male": 1905,
+      "female": 1807
+    },
+    {
+      "id": "xiang_gang",
+      "name": "香港",
+      "total": 33200,
+      "male": 17400,
+      "female": 15800
+    },
+    {
+      "id": "tai_wan",
+      "name": "台湾",
+      "total": 137423,
+      "male": 71208,
+      "female": 66205
+    }
+  ]
+}

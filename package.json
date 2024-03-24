@@ -1,0 +1,38 @@
+{
+  "name": "recently",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build:themes": "reshaped theming --output app/_themes"
+  },
+  "dependencies": {
+    "@types/katex": "^0.16.7",
+    "echarts": "^5.5.0",
+    "html2canvas": "^1.4.1",
+    "katex": "^0.16.9",
+    "lucide-react": "^0.363.0",
+    "next": "14.1.4",
+    "prettier": "^3.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-minimal-pie-chart": "^8.4.0",
+    "reshaped": "^2.10.3",
+    "sonner": "^1.4.41",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4"
+  }
+}
