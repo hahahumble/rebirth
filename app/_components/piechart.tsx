@@ -38,14 +38,9 @@ function Piechart() {
 
   return (
     <>
-      <View
-        direction="row"
-        justify={{ s: 'start', l: 'center' }}
-        align="end"
-        gap={{ s: 8, l: 16 }}
-      >
+      <View direction="row" justify="center" align="end" gap={{ s: 8, l: 16 }}>
         <PieChart
-          className="w-72"
+          className="w-52 sm:w-72"
           style={{
             fontSize: '7px'
           }}
