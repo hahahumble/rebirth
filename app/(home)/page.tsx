@@ -2,7 +2,7 @@
 
 import { Button, View, Divider, Tabs, Text, Icon, Loader } from 'reshaped';
 import Map from '@/components/map';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ResultTable from '@/components/result-table';
 import { toast } from 'sonner';
 import { X } from 'lucide-react';
@@ -14,6 +14,9 @@ import FirstTimeTable from '@/components/first-time-table';
 
 function Page() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isPressing, setIsPressing] = useState(false);
+
+  const pressIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
     const rehydrate = async () => {
@@ -33,6 +36,21 @@ function Page() {
   const handleRebirth = () => {
     addBirthResult(simulateBirth());
     showRebirthToast();
+  };
+
+  const startPress = () => {
+    setIsPressing(true);
+    pressIntervalRef.current = setInterval(() => {
+      handleRebirth();
+    }, 150);
+  };
+
+  const endPress = () => {
+    setIsPressing(false);
+    if (pressIntervalRef.current) {
+      clearInterval(pressIntervalRef.current);
+      pressIntervalRef.current = null;
+    }
   };
 
   const showRebirthToast = () => {
@@ -115,9 +133,22 @@ function Page() {
             width="100%"
           >
             <View width={64}>
-              <Button color="primary" rounded fullWidth onClick={handleRebirth}>
-                投胎
-              </Button>
+              <div
+                onMouseDown={startPress}
+                onMouseUp={endPress}
+                onMouseLeave={endPress}
+                onTouchStart={startPress}
+                onTouchEnd={endPress}
+              >
+                <Button
+                  color="primary"
+                  rounded
+                  fullWidth
+                  onClick={handleRebirth}
+                >
+                  投胎
+                </Button>
+              </div>
             </View>
           </View>
           <View width="100%" paddingBottom={2} paddingTop={4}>
