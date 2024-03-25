@@ -1,8 +1,6 @@
 ![banner.png](images%2Fbanner.png)
 
-<p align="center">
-  <a href="https://toutai.cc/">网站</a>
-</p>
+**项目网站**：https://toutai.cc/
 
 本项目根据公布的最新出生人口数据，计算出生在某地区的可能性。
 
