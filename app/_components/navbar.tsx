@@ -1,9 +1,10 @@
 import React from 'react';
-import { Actionable, View, Text } from 'reshaped';
+import { Actionable, View, Text, Icon } from 'reshaped';
+import { Github } from 'lucide-react';
 
 function Navbar() {
   return (
-    <View direction="row" gap={4}>
+    <View direction="row" gap={4} align="center">
       <Actionable href="/data">
         <Text
           variant="body-2"
@@ -21,6 +22,13 @@ function Navbar() {
         >
           关于
         </Text>
+      </Actionable>
+      <Actionable href="https://github.com/hahahumble/rebirth">
+        <Icon
+          size={4.5}
+          svg={<Github />}
+          className="hover:text-primary hover:cursor-pointer"
+        />
       </Actionable>
     </View>
   );
