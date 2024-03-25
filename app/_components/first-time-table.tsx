@@ -5,10 +5,12 @@ import { Icon, Pagination, Table, Text, Tooltip, View } from 'reshaped';
 import { useBirth } from '@/lib/store/useBirth';
 import { CircleHelp } from 'lucide-react';
 import { BirthResult } from '@/lib/rebirth';
+import { FemaleIcon, MaleIcon } from '@/components/gender-icon';
 
 interface UniqueResult {
   province: string;
-  firstAppearance: number;
+  firstBoyAppearance: number | string;
+  firstGirlAppearance: number | string;
 }
 
 function FirstTimeTable() {
@@ -16,22 +18,43 @@ function FirstTimeTable() {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const pageSize = 20;
 
-  // Remove duplicates
   const uniqueProvinces = Array.from(
     new Set(birthResults.map(item => item.province))
   );
 
   const uniqueResults: UniqueResult[] = uniqueProvinces.map(province => {
-    const firstAppearanceIndex = birthResults.findIndex(
-      item => item.province === province
+    const firstBoyIndex = birthResults.findIndex(
+      item => item.province === province && item.gender === 'male'
+    );
+    const firstGirlIndex = birthResults.findIndex(
+      item => item.province === province && item.gender === 'female'
     );
     return {
       province,
-      firstAppearance: firstAppearanceIndex + 1
+      firstBoyAppearance: firstBoyIndex >= 0 ? firstBoyIndex + 1 : 'N/A',
+      firstGirlAppearance: firstGirlIndex >= 0 ? firstGirlIndex + 1 : 'N/A'
     };
   });
 
-  uniqueResults.sort((a, b) => b.firstAppearance - a.firstAppearance);
+  uniqueResults.sort((a, b) => {
+    const aFirstBoyAppearance =
+      a.firstBoyAppearance !== 'N/A' ? Number(a.firstBoyAppearance) : Infinity;
+    const aFirstGirlAppearance =
+      a.firstGirlAppearance !== 'N/A'
+        ? Number(a.firstGirlAppearance)
+        : Infinity;
+    const bFirstBoyAppearance =
+      b.firstBoyAppearance !== 'N/A' ? Number(b.firstBoyAppearance) : Infinity;
+    const bFirstGirlAppearance =
+      b.firstGirlAppearance !== 'N/A'
+        ? Number(b.firstGirlAppearance)
+        : Infinity;
+
+    const aMinAppearance = Math.min(aFirstBoyAppearance, aFirstGirlAppearance);
+    const bMinAppearance = Math.min(bFirstBoyAppearance, bFirstGirlAppearance);
+
+    return bMinAppearance - aMinAppearance;
+  });
 
   const totalPages = Math.ceil(uniqueResults.length / pageSize);
 
@@ -53,7 +76,7 @@ function FirstTimeTable() {
             </Table.Heading>
             <Table.Heading padding={1.5}>
               <View align="center">
-                <Tooltip text="需要多少次才能投胎到这个地方" position="top">
+                <Tooltip text="男孩和女孩第一次出现的序号" position="top">
                   {attributes => (
                     <View direction="row" align="center" gap={1}>
                       <Text align="center">第一次出现</Text>
@@ -70,7 +93,24 @@ function FirstTimeTable() {
                 <Text align="center">{item.province}</Text>
               </Table.Cell>
               <Table.Cell padding={1}>
-                <Text align="center">{item.firstAppearance}</Text>
+                <View direction="row" justify="center" gap={3}>
+                  {item.firstBoyAppearance !== 'N/A' && (
+                    <View direction="row" align="center" gap={1}>
+                      <MaleIcon size={14} />
+                      <Text align="center">{item.firstBoyAppearance}</Text>
+                    </View>
+                  )}
+                  {item.firstGirlAppearance !== 'N/A' && (
+                    <View direction="row" align="center" gap={1}>
+                      <FemaleIcon size={14} />
+                      <Text align="center">{item.firstGirlAppearance}</Text>
+                    </View>
+                  )}
+                  {item.firstBoyAppearance === 'N/A' &&
+                    item.firstGirlAppearance === 'N/A' && (
+                      <Text align="center">-</Text>
+                    )}
+                </View>
               </Table.Cell>
             </Table.Row>
           ))}
