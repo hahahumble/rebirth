@@ -1,26 +1,24 @@
-hahahumble's homepage
+![banner.png](images%2Fbanner.png)
 
-## Getting Started
+<p align="center">
+  <a href="https://toutai.cc/">网站</a>
+</p>
 
-First, run the development server:
+本项目根据公布的最新出生人口数据，计算出生在某地区的可能性。
 
-```bash
-bun dev
-```
+### 数据来源
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 中国大陆：[第七次人口普查](https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm)（2019.11.1 - 2020.10.31）
+- 香港特别行政区：[香港政府统计处](https://www.censtatd.gov.hk/tc/web_table.html?id=3)（2023）
+- 澳门特别行政区：[统计暨普查局](https://www.censtatd.gov.hk/tc/web_table.html?id=3)（2023）
+- 台湾地区：[人口统计资料](https://www.ris.gov.tw/app/portal/346)（2023）
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 开发
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and
-load Inter, a custom Google Font.
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Bun](https://bun.sh/)
 
-## Learn More
+### 致谢
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions
-are welcome!
+https://uahh.site/reborn
