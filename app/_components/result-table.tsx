@@ -54,15 +54,17 @@ function ResultTable() {
           ))}
         </Table>
       </View>
-      <View align="center">
-        <Pagination
-          total={totalPages}
-          previousAriaLabel="上一页"
-          nextAriaLabel="下一页"
-          pageAriaLabel={args => `Page ${args.page}`}
-          onChange={args => handlePageChange(args.page)}
-        />
-      </View>
+      {totalPages > 1 && (
+        <View align="center">
+          <Pagination
+            total={totalPages}
+            previousAriaLabel="上一页"
+            nextAriaLabel="下一页"
+            pageAriaLabel={args => `Page ${args.page}`}
+            onChange={args => handlePageChange(args.page)}
+          />
+        </View>
+      )}
     </View>
   );
 }
