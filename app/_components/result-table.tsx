@@ -10,7 +10,7 @@ function ResultTable() {
   const reversedResults = [...birthResults].reverse();
 
   const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 30;
+  const pageSize = 20;
 
   const startIndex = (currentPage - 1) * pageSize;
   const endIndex = startIndex + pageSize;

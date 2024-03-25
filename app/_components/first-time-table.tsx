@@ -1,19 +1,27 @@
 'use client';
 
-import React from 'react';
-import { Icon, Table, Text, Tooltip, View } from 'reshaped';
+import React, { useState } from 'react';
+import { Icon, Pagination, Table, Text, Tooltip, View } from 'reshaped';
 import { useBirth } from '@/lib/store/useBirth';
 import { CircleHelp } from 'lucide-react';
+import { BirthResult } from '@/lib/rebirth';
+
+interface UniqueResult {
+  province: string;
+  firstAppearance: number;
+}
 
 function FirstTimeTable() {
-  const birthResults = useBirth(state => state.birthResults);
+  const birthResults = useBirth(state => state.birthResults) as BirthResult[];
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const pageSize = 20;
 
   // Remove duplicates
   const uniqueProvinces = Array.from(
     new Set(birthResults.map(item => item.province))
   );
 
-  const uniqueResults = uniqueProvinces.map(province => {
+  const uniqueResults: UniqueResult[] = uniqueProvinces.map(province => {
     const firstAppearanceIndex = birthResults.findIndex(
       item => item.province === province
     );
@@ -24,6 +32,16 @@ function FirstTimeTable() {
   });
 
   uniqueResults.sort((a, b) => b.firstAppearance - a.firstAppearance);
+
+  const totalPages = Math.ceil(uniqueResults.length / pageSize);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
+  const startIndex = (currentPage - 1) * pageSize;
+  const endIndex = startIndex + pageSize;
+  const currentPageResults = uniqueResults.slice(startIndex, endIndex);
 
   return (
     <View gap={4}>
@@ -46,7 +64,7 @@ function FirstTimeTable() {
               </View>
             </Table.Heading>
           </Table.Row>
-          {uniqueResults.map((item, index) => (
+          {currentPageResults.map((item, index) => (
             <Table.Row key={index}>
               <Table.Cell padding={1}>
                 <Text align="center">{item.province}</Text>
@@ -57,6 +75,15 @@ function FirstTimeTable() {
             </Table.Row>
           ))}
         </Table>
+      </View>
+      <View align="center">
+        <Pagination
+          total={totalPages}
+          previousAriaLabel="上一页"
+          nextAriaLabel="下一页"
+          pageAriaLabel={args => `Page ${args.page}`}
+          onChange={args => handlePageChange(args.page)}
+        />
       </View>
     </View>
   );
