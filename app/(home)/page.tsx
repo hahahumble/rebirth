@@ -119,7 +119,7 @@ function Page() {
 
   return (
     <>
-      <View paddingInline={4} paddingBottom={12}>
+      <View paddingInline={4} paddingBottom={9}>
         <View paddingBlock={4}>
           <Map />
         </View>
