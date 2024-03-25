@@ -3,7 +3,6 @@
 import china from '@/data/china.json';
 import * as echarts from 'echarts';
 import { useEffect, useRef, useMemo } from 'react';
-import { Loader2 } from 'lucide-react';
 import { Loader, Text } from 'reshaped';
 import { useBirth } from '@/lib/store/useBirth';
 import { BirthResult } from '@/lib/rebirth';
@@ -38,7 +37,6 @@ const Map = () => {
     dataList.length > 0 ? Math.min(...dataList.map(item => item.value)) : 0;
 
   const echartsMapClick = () => {
-    // 点击地图模块逻辑事件
   };
 
   const mapOption = (mapName: any, data: any) => {
@@ -105,9 +103,9 @@ const Map = () => {
           markPoint: {
             symbol: 'pin',
             symbolSize: 30,
-            animationDuration: 100, // 设置动画持续时间为 1000 毫秒（1 秒）
+            animationDuration: 100, // Animation duration
             itemStyle: {
-              color: '#01ca78' // 设置 markPoint 的颜色为红色
+              color: '#01ca78' // Color of markPoint
             },
             data: markPointData
               ? [

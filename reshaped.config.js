@@ -2,7 +2,7 @@ const { generateThemeColors } = require('reshaped/themes');
 
 const config = {
   themes: {
-    productTheme: {
+    orangeTheme: {
       color: {
         ...generateThemeColors({
           primary: '#ff4f04',

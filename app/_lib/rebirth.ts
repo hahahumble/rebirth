@@ -15,16 +15,13 @@ export interface BirthResult {
   probability: number;
 }
 
-// 提取省份数据
-export const regions: Region[] = data.region.slice(1); // 不包含全国的数据
+export const regions: Region[] = data.region.slice(1);  // Do not include the first element
 
-// 计算总出生人口数
 const totalBirths: number = regions.reduce(
   (sum, region) => sum + region.total,
   0
 );
 
-// 计算每个省份的男女出生概率
 const provinceProbabilities: {
   [key: string]: { male: number; female: number };
 } = {};
@@ -36,7 +33,6 @@ regions.forEach(region => {
   };
 });
 
-// 模拟出生函数
 export function simulateBirth(): BirthResult {
   const random: number = Math.random();
   let cumulativeProbability = 0;
@@ -70,7 +66,6 @@ export function simulateBirth(): BirthResult {
     }
   }
 
-  // 如果没有找到匹配的省份，返回一个默认结果
   const defaultResult = {
     province: 'Unknown',
     id: 'Unknown',

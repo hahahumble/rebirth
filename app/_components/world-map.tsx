@@ -11,7 +11,6 @@ const WorldMap = () => {
   const chartRef = useRef<HTMLDivElement | null>(null);
 
   const echartsMapClick = () => {
-    // 点击地图模块逻辑事件
   };
 
   const mapOption = (mapName: any, data: any) => {

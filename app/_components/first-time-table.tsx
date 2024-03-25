@@ -8,23 +8,21 @@ import { CircleHelp } from 'lucide-react';
 function FirstTimeTable() {
   const birthResults = useBirth(state => state.birthResults);
 
-  // 去重处理，只保留每个省份第一次出现的数据
+  // Remove duplicates
   const uniqueProvinces = Array.from(
     new Set(birthResults.map(item => item.province))
   );
 
-  // 创建一个包含每个省份及其第一次出现索引的数组
   const uniqueResults = uniqueProvinces.map(province => {
     const firstAppearanceIndex = birthResults.findIndex(
       item => item.province === province
     );
     return {
       province,
-      firstAppearance: firstAppearanceIndex + 1 // 加1是因为索引是从0开始的，但我们要显示的是次数，所以需要加1
+      firstAppearance: firstAppearanceIndex + 1
     };
   });
 
-  // 对 uniqueResults 进行降序排序
   uniqueResults.sort((a, b) => b.firstAppearance - a.firstAppearance);
 
   return (

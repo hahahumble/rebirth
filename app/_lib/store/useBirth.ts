@@ -28,7 +28,7 @@ export const useBirth = create<BirthState>()(
         return get().birthResults.length;
       },
       clearBirthResults: () => {
-        set({ birthResults: [] }); // 将 birthResults 重置为空数组
+        set({ birthResults: [] });
       }
     }),
     {
