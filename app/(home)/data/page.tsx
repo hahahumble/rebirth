@@ -1,6 +1,7 @@
 import React from 'react';
 import { Actionable, Text, View } from 'reshaped';
 import BirthTable from '@/components/birth-table';
+import DeathTable from '@/components/death-table';
 
 function Page() {
   return (
@@ -41,8 +42,11 @@ function Page() {
           （2023）
         </Text>
       </View>
-      <View paddingBlock={12}>
+      <View paddingTop={12}>
         <BirthTable />
+      </View>
+      <View paddingTop={6} paddingBottom={8}>
+        <DeathTable />
       </View>
     </>
   );

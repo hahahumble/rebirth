@@ -34,8 +34,15 @@ function Page() {
     }));
 
   const handleRebirth = () => {
-    addBirthResult(simulateBirth());
-    showRebirthToast();
+    const randomNumber = Math.floor(Math.random() * 10000);
+
+    if (randomNumber < 31) {
+      // 31 out of 10000 is 3.1‰
+      showRebirthErrorToast();
+    } else {
+      addBirthResult(simulateBirth());
+      showRebirthToast();
+    }
   };
 
   const startPress = () => {
@@ -87,6 +94,24 @@ function Page() {
         {/*>*/}
         {/*  <Icon size={4} color="neutral" svg={<Share2 />} />*/}
         {/*</button>*/}
+      </div>
+    ));
+  };
+
+  const showRebirthErrorToast = () => {
+    toast.custom(t => (
+      <div className="relative bg-red-100 w-full sm:w-[354px] p-5 border-red-500 border rounded-xl">
+        <div className="flex flex-row justify-between">
+          <Text color="critical">
+            抱歉，你在这次投胎中不幸夭折，再试一次吧！
+          </Text>
+        </div>
+        <button
+          className="absolute top-2 right-3"
+          onClick={() => toast.dismiss(t)}
+        >
+          <Icon color="critical" size={4} svg={<X />} />
+        </button>
       </div>
     ));
   };
