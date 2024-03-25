@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
-import './_themes/productTheme/theme.css';
+import './_themes/orangeTheme/theme.css';
 import ReshapedProvider from '@/components/reshaped-provider';
 import React from 'react';
 import { Toaster } from 'sonner';
@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-rs-theme="productTheme" data-rs-color-mode="light">
+    <html lang="en" data-rs-theme="orangeTheme" data-rs-color-mode="light">
       <Script
         defer
         src="https://api.pirsch.io/pirsch-extended.js"
