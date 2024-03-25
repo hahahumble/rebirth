@@ -15,7 +15,7 @@ export interface BirthResult {
   probability: number;
 }
 
-export const regions: Region[] = data.region.slice(1);  // Do not include the first element
+export const regions: Region[] = data.region.slice(1); // Do not include the first element
 
 const totalBirths: number = regions.reduce(
   (sum, region) => sum + region.total,
@@ -58,9 +58,9 @@ export function simulateBirth(): BirthResult {
           gender: gender,
           probability: probability
         };
-        console.log(
-          `A baby is born in ${result.province} (${result.id}), gender: ${result.gender}, probability: ${result.probability}`
-        );
+        // console.log(
+        //   `A baby is born in ${result.province} (${result.id}), gender: ${result.gender}, probability: ${result.probability}`
+        // );
         return result;
       }
     }
@@ -72,9 +72,9 @@ export function simulateBirth(): BirthResult {
     gender: 'Unknown',
     probability: 0
   };
-  console.log(
-    `A baby is born in ${defaultResult.province} (${defaultResult.id}), gender: ${defaultResult.gender}, probability: ${defaultResult.probability}`
-  );
+  // console.log(
+  //   `A baby is born in ${defaultResult.province} (${defaultResult.id}), gender: ${defaultResult.gender}, probability: ${defaultResult.probability}`
+  // );
   return defaultResult;
 }
 
