@@ -28,7 +28,7 @@ function Page() {
           （2023）；澳门特别行政区：
           <Actionable
             className="underline hover:underline hover:text-primary hover:cursor-pointer"
-            href="https://www.censtatd.gov.hk/tc/web_table.html?id=3"
+            href="https://www.dsec.gov.mo/zh-MO/Statistic?id=101"
           >
             统计暨普查局
           </Actionable>
