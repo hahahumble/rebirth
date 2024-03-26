@@ -58,7 +58,7 @@ function Piechart() {
             pointerEvents: 'none'
           }}
         />
-        <View direction="column" gap={2} paddingBottom={4}>
+        <View direction="column" gap={2} paddingBottom={4} width={28}>
           <View direction="row" gap={1} align="center">
             <div className="w-4 h-4 bg-[#ff4f04] rounded-full" />
             <Text>男孩：{genderCounts.male}</Text>
