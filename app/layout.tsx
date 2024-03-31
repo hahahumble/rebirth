@@ -21,6 +21,11 @@ export default function RootLayout({
         id="pirschextendedjs"
         data-code="oybHcrMr5hY3eJeFle5rcwXY2Vu131OU"
       ></Script>
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1341437621876451"
+        crossOrigin="anonymous"
+      />
       <body className={inter.className}>
         <Toaster position="bottom-center" />
         <ReshapedProvider>{children}</ReshapedProvider>
