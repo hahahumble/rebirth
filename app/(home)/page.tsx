@@ -159,7 +159,11 @@ function Page() {
           >
             <View width={64}>
               <div
-                onMouseDown={startPress}
+                onMouseDown={event => {
+                  if (event.button === 0) {
+                    startPress();
+                  }
+                }}
                 onMouseUp={endPress}
                 onMouseLeave={endPress}
                 onTouchStart={startPress}
