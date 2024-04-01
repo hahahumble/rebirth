@@ -96,7 +96,7 @@ function FirstTimeTable() {
                 <View direction="row" justify="center" gap={3}>
                   {item.firstBoyAppearance !== 'N/A' && (
                     <View direction="row" align="center" gap={1}>
-                      <MaleIcon size={14} />
+                      <MaleIcon size={12} />
                       <Text align="center">{item.firstBoyAppearance}</Text>
                     </View>
                   )}
