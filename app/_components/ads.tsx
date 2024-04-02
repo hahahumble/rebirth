@@ -1,28 +1,35 @@
-import React from 'react';
-import Script from 'next/script';
+import React, { useEffect } from 'react';
 
-function Ads() {
-  return (
-    <>
-      <Script
-        id="adsense"
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1341437621876451"
-        crossOrigin="anonymous"
-      ></Script>
-      <ins
-        className="adsbygoogle"
-        style={{ display: 'block', width: '100%', height: '90px' }}
-        data-ad-client="ca-pub-1341437621876451"
-        data-ad-slot="2362148225"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
-      <Script id="adsense2">
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </Script>
-    </>
-  );
+declare global {
+  interface Window {
+    adsbygoogle: any;
+  }
 }
 
+const Ads = () => {
+  useEffect(() => {
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
+
+  return (
+    <ins
+      className="adsbygoogle adbanner-customize"
+      style={{
+        display: 'block',
+        overflow: 'hidden',
+        height: '100px',
+        paddingInline: '1rem',
+        paddingBottom: '2rem'
+      }}
+      data-ad-client="ca-pub-1341437621876451"
+      data-ad-slot="2362148225"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    />
+  );
+};
 export default Ads;
