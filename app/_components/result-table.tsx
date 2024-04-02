@@ -36,6 +36,12 @@ function ResultTable() {
             <Table.Heading padding={1.5}>
               <Text align="center">省份/地区</Text>
             </Table.Heading>
+            <Table.Heading padding={1.5}>
+              <Text align="center">区域</Text>
+            </Table.Heading>
+            <Table.Heading padding={1.5}>
+              <Text align="center">第几孩</Text>
+            </Table.Heading>
           </Table.Row>
           {currentPageData.map((item, index) => (
             <Table.Row key={index}>
@@ -49,6 +55,12 @@ function ResultTable() {
               </Table.Cell>
               <Table.Cell padding={1}>
                 <Text align="center">{item.province}</Text>
+              </Table.Cell>
+              <Table.Cell padding={1}>
+                <Text align="center">{item.category || '-'}</Text>
+              </Table.Cell>
+              <Table.Cell padding={1}>
+                <Text align="center">{item.order || '-'}</Text>
               </Table.Cell>
             </Table.Row>
           ))}

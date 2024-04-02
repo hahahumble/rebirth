@@ -5,12 +5,18 @@ import Map from '@/components/map';
 import React, { useEffect, useRef, useState } from 'react';
 import ResultTable from '@/components/result-table';
 import { toast } from 'sonner';
-import { X } from 'lucide-react';
-import { simulateBirth, translateGenderChild } from '@/_lib/rebirth';
+import { Share2, X } from 'lucide-react';
+import {
+  BirthResult,
+  simulateBirth,
+  translateGenderChild
+} from '@/_lib/rebirth';
 import { useBirth } from '@/lib/store/useBirth';
 import BarList from '@/components/barlist';
 import Piechart from '@/components/piechart';
 import FirstTimeTable from '@/components/first-time-table';
+import useShareModal from '@/lib/store/useShareModal';
+import Ads from '@/components/ads';
 
 function Page() {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,12 +32,16 @@ function Page() {
     rehydrate();
   }, []);
 
-  const { addBirthResult, getLatestBirthResult, getBirthResultsCount } =
-    useBirth(state => ({
-      addBirthResult: state.addBirthResult,
-      getLatestBirthResult: state.getLatestBirthResult,
-      getBirthResultsCount: state.getBirthResultsCount
-    }));
+  const { activate, deactivate, setShareInfo } = useShareModal(state => ({
+    activate: state.activate,
+    deactivate: state.deactivate,
+    setShareInfo: state.setShareInfo
+  }));
+
+  const { addBirthResult, getBirthResultsCount } = useBirth(state => ({
+    addBirthResult: state.addBirthResult,
+    getBirthResultsCount: state.getBirthResultsCount
+  }));
 
   const handleRebirth = () => {
     const randomNumber = Math.floor(Math.random() * 10000);
@@ -40,8 +50,9 @@ function Page() {
       // 31 out of 10000 is 3.1‰
       showRebirthErrorToast();
     } else {
-      addBirthResult(simulateBirth());
-      showRebirthToast();
+      const birthResult = simulateBirth();
+      addBirthResult(birthResult);
+      showRebirthToast(birthResult, getBirthResultsCount());
     }
   };
 
@@ -60,40 +71,73 @@ function Page() {
     }
   };
 
-  const showRebirthToast = () => {
+  const showRebirthToast = (birthResult: BirthResult, count: number) => {
+    const countAtCreation = count;
     toast.custom(t => (
-      <div className="relative bg-white w-full sm:w-[354px] p-5 border-neutral-faded border rounded-xl">
-        <div className="flex flex-row justify-between">
+      <div className="relative bg-white w-full sm:w-[354px] py-5 pl-3 pr-5 border-neutral-faded border rounded-xl">
+        <div className="flex flex-row justify-start space-x-2 items-center">
+          <Button
+            variant="ghost"
+            onClick={() => {
+              activate();
+              setShareInfo({
+                count: countAtCreation,
+                region: birthResult.province,
+                category: birthResult.category,
+                gender: birthResult.gender,
+                order: birthResult.order,
+                probability: birthResult.probability
+              });
+            }}
+          >
+            <Icon size={4} color="neutral-faded" svg={<Share2 />} />
+          </Button>
           <Text>
             第{' '}
-            <span className="font-medium text-primary">
-              {getBirthResultsCount()}
-            </span>{' '}
-            次投胎，你出生在
-            <span className="font-medium text-primary">
-              {getLatestBirthResult()?.province}
-            </span>
-            ，是一个
-            <span className="font-medium text-primary">
-              {translateGenderChild(getLatestBirthResult()?.gender as string)}
-            </span>
-            。
+            <span className="font-medium text-primary">{countAtCreation}</span>{' '}
+            次投胎，
+            {['香港', '澳门', '台湾'].includes(birthResult.province) ? (
+              <>
+                你出生在
+                <span className="font-medium text-primary">
+                  {birthResult.province}
+                </span>
+                ，是一个
+                <span className="font-medium text-primary">
+                  {translateGenderChild(birthResult.gender)}
+                </span>
+                。
+              </>
+            ) : (
+              <>
+                你出生在
+                <span className="font-medium text-primary">
+                  {birthResult.province}
+                </span>
+                的
+                <span className="font-medium text-primary">
+                  {birthResult.category}
+                </span>
+                ，是一个
+                <span className="font-medium text-primary">
+                  {translateGenderChild(birthResult.gender)}
+                </span>
+                ，你是这个家庭
+                <span className="font-medium text-primary">
+                  第{birthResult.order}个
+                </span>
+                孩子。
+              </>
+            )}
           </Text>
         </div>
+
         <button
           className="absolute top-2 right-3"
           onClick={() => toast.dismiss(t)}
         >
           <Icon size={4} color="neutral-faded" svg={<X />} />
         </button>
-        {/*<button*/}
-        {/*  className="absolute bottom-[20px] right-6"*/}
-        {/*  onClick={() => {*/}
-        {/*    activate();*/}
-        {/*  }}*/}
-        {/*>*/}
-        {/*  <Icon size={4} color="neutral" svg={<Share2 />} />*/}
-        {/*</button>*/}
       </div>
     ));
   };
@@ -209,6 +253,7 @@ function Page() {
           </View>
         </View>
       </View>
+      <Ads />
     </>
   );
 }

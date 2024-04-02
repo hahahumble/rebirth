@@ -1,4 +1,16 @@
 import data from '@/data/birthrate.json';
+import dataDetailed from '@/data/birthrate_detailed.json';
+
+const chinaBirthPopulation = 12123210;
+const hongKongBirthPopulation = 33200;
+const macauBirthPopulation = 3712;
+const taiwanBirthPopulation = 137413;
+
+const totalPopulation =
+  chinaBirthPopulation +
+  hongKongBirthPopulation +
+  macauBirthPopulation +
+  taiwanBirthPopulation;
 
 interface Region {
   id: string;
@@ -8,74 +20,133 @@ interface Region {
   female: number;
 }
 
+export const regions: Region[] = data.region.slice(1); // Do not include the first element
+
+interface CategoryData {
+  [order: string]: {
+    male: number;
+    female: number;
+  };
+}
+
+export interface BirthData {
+  id: number;
+  name: string;
+  display_name: string;
+  town: CategoryData;
+  city: CategoryData;
+  countryside: CategoryData;
+}
+
 export interface BirthResult {
   province: string;
-  id: string;
+  id: number;
+  category: string;
   gender: string;
+  order: string;
   probability: number;
 }
 
-export const regions: Region[] = data.region.slice(1); // Do not include the first element
-
-const totalBirths: number = regions.reduce(
-  (sum, region) => sum + region.total,
-  0
-);
-
-const provinceProbabilities: {
-  [key: string]: { male: number; female: number };
-} = {};
-
-regions.forEach(region => {
-  provinceProbabilities[region.id] = {
-    male: region.male / totalBirths,
-    female: region.female / totalBirths
-  };
-});
+export const birthDataDetailed: BirthData[] = dataDetailed.slice(1);
 
 export function simulateBirth(): BirthResult {
-  const random: number = Math.random();
-  let cumulativeProbability = 0;
+  const randomNumber = Math.random() * totalPopulation;
 
-  for (const province in provinceProbabilities) {
-    const { male, female } = provinceProbabilities[province];
-    const totalProbability = male + female;
-    cumulativeProbability += totalProbability;
-
-    if (random <= cumulativeProbability) {
-      const genderRandom = random - (cumulativeProbability - totalProbability);
-      const genderProbability = male / totalProbability;
-      const provinceData = regions.find(region => region.id === province);
-      if (provinceData) {
-        const gender =
-          genderRandom <= genderProbability * totalProbability
-            ? 'male'
-            : 'female';
-        const probability = gender === 'male' ? male : female;
-        const result = {
-          province: provinceData.name,
-          id: provinceData.id,
-          gender: gender,
-          probability: probability
-        };
-        // console.log(
-        //   `A baby is born in ${result.province} (${result.id}), gender: ${result.gender}, probability: ${result.probability}`
-        // );
-        return result;
+  let cumulativePopulation = 0;
+  for (const region of dataDetailed) {
+    if (region.name === 'national') continue;
+    for (const category of ['town', 'city', 'countryside'] as const) {
+      for (const order of [
+        'one',
+        'two',
+        'three',
+        'four',
+        'five_plus'
+      ] as const) {
+        for (const gender of ['male', 'female'] as const) {
+          let population = region[category][order][gender];
+          if (!isSpecialProvince(region.name)) {
+            population *= 10;
+          }
+          cumulativePopulation += population;
+          if (cumulativePopulation > randomNumber) {
+            const probability = population / totalPopulation;
+            return {
+              id: region.id,
+              province: region.display_name,
+              gender: gender,
+              category:
+                category === 'town'
+                  ? '城镇'
+                  : category === 'city'
+                    ? '城市'
+                    : '乡村',
+              order:
+                order === 'one'
+                  ? '一'
+                  : order === 'two'
+                    ? '二'
+                    : order === 'three'
+                      ? '三'
+                      : order === 'four'
+                        ? '四'
+                        : '五及以上',
+              probability: probability
+            };
+          }
+        }
       }
     }
   }
 
-  const defaultResult = {
-    province: 'Unknown',
-    id: 'Unknown',
-    gender: 'Unknown',
+  return {
+    id: 0,
+    province: '',
+    gender: '',
+    category: '',
+    order: '',
     probability: 0
   };
-  // console.log(
-  //   `A baby is born in ${defaultResult.province} (${defaultResult.id}), gender: ${defaultResult.gender}, probability: ${defaultResult.probability}`
-  // );
-  return defaultResult;
+}
+
+export function calculateBirthProbability(
+  province: string,
+  category: 'city' | 'town' | 'countryside',
+  gender: 'male' | 'female',
+  order: string
+): { population: number; probability: number } {
+  const region = birthDataDetailed.find(item => item.name === province);
+  if (!region) {
+    return { population: 0, probability: 0 };
+  }
+
+  let categoryData;
+  switch (category) {
+    case 'town':
+      categoryData = region.town;
+      break;
+    case 'city':
+      categoryData = region.city;
+      break;
+    case 'countryside':
+      categoryData = region.countryside;
+      break;
+    default:
+      return { population: 0, probability: 0 };
+  }
+
+  const genderData = categoryData[order][gender];
+  let population = genderData;
+  if (!isSpecialProvince(province)) {
+    population *= 10;
+  }
+  const probability = population / totalPopulation;
+
+  return { population, probability };
+}
+
+function isSpecialProvince(province: string): boolean {
+  return ['xiang_gang', 'ao_men', 'tai_wan'].includes(province);
 }
 
 export function translateGender(gender: string): string {

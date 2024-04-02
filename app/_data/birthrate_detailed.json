@@ -1,0 +1,2487 @@
+[
+  {
+    "id": 1,
+    "name": "national",
+    "display_name": "全国",
+    "town": {
+      "one": {
+        "male": 68521,
+        "female": 59884
+      },
+      "two": {
+        "male": 70420,
+        "female": 66008
+      },
+      "three": {
+        "male": 16771,
+        "female": 12333
+      },
+      "four": {
+        "male": 2592,
+        "female": 1914
+      },
+      "five_plus": {
+        "male": 708,
+        "female": 541
+      }
+    },
+    "city": {
+      "one": {
+        "male": 142438,
+        "female": 127127
+      },
+      "two": {
+        "male": 113936,
+        "female": 105184
+      },
+      "three": {
+        "male": 16248,
+        "female": 11005
+      },
+      "four": {
+        "male": 1980,
+        "female": 1664
+      },
+      "five_plus": {
+        "male": 446,
+        "female": 273
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 83698,
+        "female": 73362
+      },
+      "two": {
+        "male": 85359,
+        "female": 81394
+      },
+      "three": {
+        "male": 29369,
+        "female": 23594
+      },
+      "four": {
+        "male": 6453,
+        "female": 4898
+      },
+      "five_plus": {
+        "male": 2299,
+        "female": 1902
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "bei_jing",
+    "display_name": "北京",
+    "city": {
+      "one": {
+        "male": 4603,
+        "female": 4114
+      },
+      "two": {
+        "male": 2411,
+        "female": 2230
+      },
+      "three": {
+        "male": 128,
+        "female": 98
+      },
+      "four": {
+        "male": 10,
+        "female": 12
+      },
+      "five_plus": {
+        "male": 1,
+        "female": 7
+      }
+    },
+    "town": {
+      "one": {
+        "male": 337,
+        "female": 305
+      },
+      "two": {
+        "male": 222,
+        "female": 215
+      },
+      "three": {
+        "male": 8,
+        "female": 12
+      },
+      "four": {
+        "male": 0,
+        "female": 1
+      },
+      "five_plus": {
+        "male": 1,
+        "female": 0
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 606,
+        "female": 549
+      },
+      "two": {
+        "male": 465,
+        "female": 445
+      },
+      "three": {
+        "male": 21,
+        "female": 21
+      },
+      "four": {
+        "male": 4,
+        "female": 2
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 0
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": "tian_jin",
+    "display_name": "天津",
+    "city": {
+      "one": {
+        "male": 2171,
+        "female": 1978
+      },
+      "two": {
+        "male": 1207,
+        "female": 1162
+      },
+      "three": {
+        "male": 88,
+        "female": 64
+      },
+      "four": {
+        "male": 12,
+        "female": 8
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 1
+      }
+    },
+    "town": {
+      "one": {
+        "male": 115,
+        "female": 95
+      },
+      "two": {
+        "male": 105,
+        "female": 109
+      },
+      "three": {
+        "male": 13,
+        "female": 13
+      },
+      "four": {
+        "male": 1,
+        "female": 0
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 0
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 274,
+        "female": 229
+      },
+      "two": {
+        "male": 250,
+        "female": 271
+      },
+      "three": {
+        "male": 39,
+        "female": 17
+      },
+      "four": {
+        "male": 2,
+        "female": 1
+      },
+      "five_plus": {
+        "male": 1,
+        "female": 0
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": "he_bei",
+    "display_name": "河北",
+    "city": {
+      "one": {
+        "male": 4905,
+        "female": 4489
+      },
+      "two": {
+        "male": 4601,
+        "female": 4440
+      },
+      "three": {
+        "male": 533,
+        "female": 364
+      },
+      "four": {
+        "male": 48,
+        "female": 47
+      },
+      "five_plus": {
+        "male": 8,
+        "female": 8
+      }
+    },
+    "town": {
+      "one": {
+        "male": 4120,
+        "female": 3791
+      },
+      "two": {
+        "male": 4795,
+        "female": 4648
+      },
+      "three": {
+        "male": 1189,
+        "female": 867
+      },
+      "four": {
+        "male": 152,
+        "female": 98
+      },
+      "five_plus": {
+        "male": 24,
+        "female": 13
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 3674,
+        "female": 3326
+      },
+      "two": {
+        "male": 4919,
+        "female": 4900
+      },
+      "three": {
+        "male": 1807,
+        "female": 1427
+      },
+      "four": {
+        "male": 259,
+        "female": 176
+      },
+      "five_plus": {
+        "male": 53,
+        "female": 31
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": "shan_xi_2",
+    "display_name": "山西",
+    "city": {
+      "one": {
+        "male": 3323,
+        "female": 3073
+      },
+      "two": {
+        "male": 2629,
+        "female": 2573
+      },
+      "three": {
+        "male": 206,
+        "female": 146
+      },
+      "four": {
+        "male": 19,
+        "female": 20
+      },
+      "five_plus": {
+        "male": 6,
+        "female": 0
+      }
+    },
+    "town": {
+      "one": {
+        "male": 1891,
+        "female": 1794
+      },
+      "two": {
+        "male": 1980,
+        "female": 2026
+      },
+      "three": {
+        "male": 238,
+        "female": 157
+      },
+      "four": {
+        "male": 19,
+        "female": 17
+      },
+      "five_plus": {
+        "male": 3,
+        "female": 1
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 2464,
+        "female": 2322
+      },
+      "two": {
+        "male": 2037,
+        "female": 2265
+      },
+      "three": {
+        "male": 241,
+        "female": 231
+      },
+      "four": {
+        "male": 45,
+        "female": 40
+      },
+      "five_plus": {
+        "male": 2,
+        "female": 7
+      }
+    }
+  },
+  {
+    "id": 6,
+    "name": "nei_meng_gu",
+    "display_name": "内蒙古",
+    "city": {
+      "one": {
+        "male": 2462,
+        "female": 2312
+      },
+      "two": {
+        "male": 1621,
+        "female": 1572
+      },
+      "three": {
+        "male": 100,
+        "female": 84
+      },
+      "four": {
+        "male": 4,
+        "female": 18
+      },
+      "five_plus": {
+        "male": 2,
+        "female": 1
+      }
+    },
+    "town": {
+      "one": {
+        "male": 1641,
+        "female": 1598
+      },
+      "two": {
+        "male": 1454,
+        "female": 1370
+      },
+      "three": {
+        "male": 125,
+        "female": 96
+      },
+      "four": {
+        "male": 8,
+        "female": 16
+      },
+      "five_plus": {
+        "male": 4,
+        "female": 0
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 902,
+        "female": 819
+      },
+      "two": {
+        "male": 983,
+        "female": 958
+      },
+      "three": {
+        "male": 141,
+        "female": 107
+      },
+      "four": {
+        "male": 15,
+        "female": 10
+      },
+      "five_plus": {
+        "male": 3,
+        "female": 2
+      }
+    }
+  },
+  {
+    "id": 7,
+    "name": "liao_ning",
+    "display_name": "辽宁",
+    "city": {
+      "one": {
+        "male": 5869,
+        "female": 5297
+      },
+      "two": {
+        "male": 2318,
+        "female": 2277
+      },
+      "three": {
+        "male": 129,
+        "female": 91
+      },
+      "four": {
+        "male": 16,
+        "female": 9
+      },
+      "five_plus": {
+        "male": 3,
+        "female": 2
+      }
+    },
+    "town": {
+      "one": {
+        "male": 915,
+        "female": 795
+      },
+      "two": {
+        "male": 517,
+        "female": 561
+      },
+      "three": {
+        "male": 33,
+        "female": 21
+      },
+      "four": {
+        "male": 5,
+        "female": 5
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 0
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 974,
+        "female": 936
+      },
+      "two": {
+        "male": 758,
+        "female": 805
+      },
+      "three": {
+        "male": 103,
+        "female": 62
+      },
+      "four": {
+        "male": 9,
+        "female": 10
+      },
+      "five_plus": {
+        "male": 1,
+        "female": 2
+      }
+    }
+  },
+  {
+    "id": 8,
+    "name": "ji_lin",
+    "display_name": "吉林",
+    "city": {
+      "one": {
+        "male": 2153,
+        "female": 2057
+      },
+      "two": {
+        "male": 830,
+        "female": 829
+      },
+      "three": {
+        "male": 49,
+        "female": 50
+      },
+      "four": {
+        "male": 3,
+        "female": 9
+      },
+      "five_plus": {
+        "male": 1,
+        "female": 1
+      }
+    },
+    "town": {
+      "one": {
+        "male": 1042,
+        "female": 992
+      },
+      "two": {
+        "male": 523,
+        "female": 530
+      },
+      "three": {
+        "male": 23,
+        "female": 19
+      },
+      "four": {
+        "male": 1,
+        "female": 4
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 0
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 759,
+        "female": 694
+      },
+      "two": {
+        "male": 568,
+        "female": 556
+      },
+      "three": {
+        "male": 70,
+        "female": 46
+      },
+      "four": {
+        "male": 5,
+        "female": 3
+      },
+      "five_plus": {
+        "male": 1,
+        "female": 3
+      }
+    }
+  },
+  {
+    "id": 9,
+    "name": "hei_long_jiang",
+    "display_name": "黑龙江",
+    "city": {
+      "one": {
+        "male": 2761,
+        "female": 2499
+      },
+      "two": {
+        "male": 899,
+        "female": 881
+      },
+      "three": {
+        "male": 44,
+        "female": 39
+      },
+      "four": {
+        "male": 2,
+        "female": 7
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 0
+      }
+    },
+    "town": {
+      "one": {
+        "male": 986,
+        "female": 888
+      },
+      "two": {
+        "male": 492,
+        "female": 549
+      },
+      "three": {
+        "male": 29,
+        "female": 19
+      },
+      "four": {
+        "male": 2,
+        "female": 2
+      },
+      "five_plus": {
+        "male": 1,
+        "female": 0
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 1014,
+        "female": 906
+      },
+      "two": {
+        "male": 532,
+        "female": 625
+      },
+      "three": {
+        "male": 48,
+        "female": 40
+      },
+      "four": {
+        "male": 5,
+        "female": 1
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 3
+      }
+    }
+  },
+  {
+    "id": 10,
+    "name": "shang_hai",
+    "display_name": "上海",
+    "town": {
+      "one": {
+        "male": 562,
+        "female": 560
+      },
+      "two": {
+        "male": 369,
+        "female": 285
+      },
+      "three": {
+        "male": 39,
+        "female": 23
+      },
+      "four": {
+        "male": 4,
+        "female": 2
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 1
+      }
+    },
+    "city": {
+      "one": {
+        "male": 4329,
+        "female": 3941
+      },
+      "two": {
+        "male": 1889,
+        "female": 1781
+      },
+      "three": {
+        "male": 149,
+        "female": 90
+      },
+      "four": {
+        "male": 18,
+        "female": 8
+      },
+      "five_plus": {
+        "male": 3,
+        "female": 1
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 338,
+        "female": 348
+      },
+      "two": {
+        "male": 265,
+        "female": 259
+      },
+      "three": {
+        "male": 32,
+        "female": 31
+      },
+      "four": {
+        "male": 4,
+        "female": 2
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 0
+      }
+    }
+  },
+  {
+    "id": 11,
+    "name": "jiang_su",
+    "display_name": "江苏",
+    "town": {
+      "one": {
+        "male": 4042,
+        "female": 3634
+      },
+      "two": {
+        "male": 3595,
+        "female": 3532
+      },
+      "three": {
+        "male": 583,
+        "female": 386
+      },
+      "four": {
+        "male": 62,
+        "female": 52
+      },
+      "five_plus": {
+        "male": 9,
+        "female": 13
+      }
+    },
+    "city": {
+      "one": {
+        "male": 9360,
+        "female": 8329
+      },
+      "two": {
+        "male": 6493,
+        "female": 6009
+      },
+      "three": {
+        "male": 601,
+        "female": 376
+      },
+      "four": {
+        "male": 33,
+        "female": 50
+      },
+      "five_plus": {
+        "male": 9,
+        "female": 4
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 2729,
+        "female": 2427
+      },
+      "two": {
+        "male": 2291,
+        "female": 2183
+      },
+      "three": {
+        "male": 453,
+        "female": 355
+      },
+      "four": {
+        "male": 69,
+        "female": 45
+      },
+      "five_plus": {
+        "male": 16,
+        "female": 9
+      }
+    }
+  },
+  {
+    "id": 12,
+    "name": "zhe_jiang",
+    "display_name": "浙江",
+    "town": {
+      "one": {
+        "male": 2664,
+        "female": 2333
+      },
+      "two": {
+        "male": 2566,
+        "female": 2306
+      },
+      "three": {
+        "male": 324,
+        "female": 239
+      },
+      "four": {
+        "male": 33,
+        "female": 19
+      },
+      "five_plus": {
+        "male": 11,
+        "female": 7
+      }
+    },
+    "city": {
+      "one": {
+        "male": 7691,
+        "female": 7046
+      },
+      "two": {
+        "male": 6209,
+        "female": 5844
+      },
+      "three": {
+        "male": 769,
+        "female": 503
+      },
+      "four": {
+        "male": 77,
+        "female": 69
+      },
+      "five_plus": {
+        "male": 15,
+        "female": 15
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 2663,
+        "female": 2445
+      },
+      "two": {
+        "male": 2415,
+        "female": 2185
+      },
+      "three": {
+        "male": 328,
+        "female": 251
+      },
+      "four": {
+        "male": 40,
+        "female": 36
+      },
+      "five_plus": {
+        "male": 15,
+        "female": 1
+      }
+    }
+  },
+  {
+    "id": 13,
+    "name": "an_hui",
+    "display_name": "安徽",
+    "town": {
+      "one": {
+        "male": 4324,
+        "female": 3802
+      },
+      "two": {
+        "male": 4689,
+        "female": 4301
+      },
+      "three": {
+        "male": 912,
+        "female": 502
+      },
+      "four": {
+        "male": 74,
+        "female": 49
+      },
+      "five_plus": {
+        "male": 17,
+        "female": 8
+      }
+    },
+    "city": {
+      "one": {
+        "male": 3963,
+        "female": 3628
+      },
+      "two": {
+        "male": 3568,
+        "female": 3331
+      },
+      "three": {
+        "male": 375,
+        "female": 192
+      },
+      "four": {
+        "male": 32,
+        "female": 29
+      },
+      "five_plus": {
+        "male": 4,
+        "female": 3
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 4003,
+        "female": 3547
+      },
+      "two": {
+        "male": 5032,
+        "female": 4569
+      },
+      "three": {
+        "male": 1501,
+        "female": 987
+      },
+      "four": {
+        "male": 253,
+        "female": 144
+      },
+      "five_plus": {
+        "male": 37,
+        "female": 37
+      }
+    }
+  },
+  {
+    "id": 14,
+    "name": "fu_jian",
+    "display_name": "福建",
+    "town": {
+      "one": {
+        "male": 2270,
+        "female": 1943
+      },
+      "two": {
+        "male": 2891,
+        "female": 2395
+      },
+      "three": {
+        "male": 838,
+        "female": 481
+      },
+      "four": {
+        "male": 96,
+        "female": 43
+      },
+      "five_plus": {
+        "male": 14,
+        "female": 9
+      }
+    },
+    "city": {
+      "one": {
+        "male": 4007,
+        "female": 3705
+      },
+      "two": {
+        "male": 4440,
+        "female": 3790
+      },
+      "three": {
+        "male": 781,
+        "female": 483
+      },
+      "four": {
+        "male": 70,
+        "female": 31
+      },
+      "five_plus": {
+        "male": 10,
+        "female": 4
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 1956,
+        "female": 1734
+      },
+      "two": {
+        "male": 2407,
+        "female": 2040
+      },
+      "three": {
+        "male": 799,
+        "female": 506
+      },
+      "four": {
+        "male": 115,
+        "female": 64
+      },
+      "five_plus": {
+        "male": 23,
+        "female": 22
+      }
+    }
+  },
+  {
+    "id": 15,
+    "name": "jiang_xi",
+    "display_name": "江西",
+    "town": {
+      "one": {
+        "male": 2729,
+        "female": 2230
+      },
+      "two": {
+        "male": 3020,
+        "female": 2663
+      },
+      "three": {
+        "male": 1078,
+        "female": 669
+      },
+      "four": {
+        "male": 165,
+        "female": 103
+      },
+      "five_plus": {
+        "male": 52,
+        "female": 36
+      }
+    },
+    "city": {
+      "one": {
+        "male": 2923,
+        "female": 2522
+      },
+      "two": {
+        "male": 3100,
+        "female": 2683
+      },
+      "three": {
+        "male": 778,
+        "female": 463
+      },
+      "four": {
+        "male": 95,
+        "female": 56
+      },
+      "five_plus": {
+        "male": 23,
+        "female": 13
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 3356,
+        "female": 2767
+      },
+      "two": {
+        "male": 3495,
+        "female": 3134
+      },
+      "three": {
+        "male": 1685,
+        "female": 1106
+      },
+      "four": {
+        "male": 358,
+        "female": 189
+      },
+      "five_plus": {
+        "male": 84,
+        "female": 58
+      }
+    }
+  },
+  {
+    "id": 16,
+    "name": "shan_dong",
+    "display_name": "山东",
+    "town": {
+      "one": {
+        "male": 4141,
+        "female": 3741
+      },
+      "two": {
+        "male": 5792,
+        "female": 5386
+      },
+      "three": {
+        "male": 1745,
+        "female": 1314
+      },
+      "four": {
+        "male": 183,
+        "female": 128
+      },
+      "five_plus": {
+        "male": 30,
+        "female": 27
+      }
+    },
+    "city": {
+      "one": {
+        "male": 8911,
+        "female": 8143
+      },
+      "two": {
+        "male": 10254,
+        "female": 9328
+      },
+      "three": {
+        "male": 1579,
+        "female": 967
+      },
+      "four": {
+        "male": 115,
+        "female": 111
+      },
+      "five_plus": {
+        "male": 27,
+        "female": 15
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 4067,
+        "female": 3649
+      },
+      "two": {
+        "male": 5726,
+        "female": 5452
+      },
+      "three": {
+        "male": 2783,
+        "female": 2116
+      },
+      "four": {
+        "male": 327,
+        "female": 232
+      },
+      "five_plus": {
+        "male": 73,
+        "female": 53
+      }
+    }
+  },
+  {
+    "id": 17,
+    "name": "he_nan",
+    "display_name": "河南",
+    "town": {
+      "one": {
+        "male": 6028,
+        "female": 5025
+      },
+      "two": {
+        "male": 6165,
+        "female": 5959
+      },
+      "three": {
+        "male": 1884,
+        "female": 1504
+      },
+      "four": {
+        "male": 238,
+        "female": 163
+      },
+      "five_plus": {
+        "male": 41,
+        "female": 32
+      }
+    },
+    "city": {
+      "one": {
+        "male": 5988,
+        "female": 5259
+      },
+      "two": {
+        "male": 5634,
+        "female": 5499
+      },
+      "three": {
+        "male": 941,
+        "female": 647
+      },
+      "four": {
+        "male": 90,
+        "female": 55
+      },
+      "five_plus": {
+        "male": 21,
+        "female": 1
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 7367,
+        "female": 6372
+      },
+      "two": {
+        "male": 7884,
+        "female": 7984
+      },
+      "three": {
+        "male": 3566,
+        "female": 3017
+      },
+      "four": {
+        "male": 621,
+        "female": 362
+      },
+      "five_plus": {
+        "male": 133,
+        "female": 89
+      }
+    }
+  },
+  {
+    "id": 18,
+    "name": "hu_bei",
+    "display_name": "湖北",
+    "town": {
+      "one": {
+        "male": 2740,
+        "female": 2224
+      },
+      "two": {
+        "male": 2815,
+        "female": 2446
+      },
+      "three": {
+        "male": 394,
+        "female": 223
+      },
+      "four": {
+        "male": 40,
+        "female": 22
+      },
+      "five_plus": {
+        "male": 5,
+        "female": 4
+      }
+    },
+    "city": {
+      "one": {
+        "male": 6092,
+        "female": 5498
+      },
+      "two": {
+        "male": 4529,
+        "female": 4024
+      },
+      "three": {
+        "male": 402,
+        "female": 222
+      },
+      "four": {
+        "male": 27,
+        "female": 33
+      },
+      "five_plus": {
+        "male": 13,
+        "female": 3
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 3972,
+        "female": 3410
+      },
+      "two": {
+        "male": 4197,
+        "female": 4024
+      },
+      "three": {
+        "male": 799,
+        "female": 454
+      },
+      "four": {
+        "male": 79,
+        "female": 57
+      },
+      "five_plus": {
+        "male": 13,
+        "female": 11
+      }
+    }
+  },
+  {
+    "id": 19,
+    "name": "hu_nan",
+    "display_name": "湖南",
+    "town": {
+      "one": {
+        "male": 4204,
+        "female": 3409
+      },
+      "two": {
+        "male": 4382,
+        "female": 4044
+      },
+      "three": {
+        "male": 927,
+        "female": 699
+      },
+      "four": {
+        "male": 153,
+        "female": 90
+      },
+      "five_plus": {
+        "male": 30,
+        "female": 21
+      }
+    },
+    "city": {
+      "one": {
+        "male": 4364,
+        "female": 3720
+      },
+      "two": {
+        "male": 4281,
+        "female": 3908
+      },
+      "three": {
+        "male": 619,
+        "female": 367
+      },
+      "four": {
+        "male": 77,
+        "female": 44
+      },
+      "five_plus": {
+        "male": 11,
+        "female": 13
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 4912,
+        "female": 4005
+      },
+      "two": {
+        "male": 5038,
+        "female": 4686
+      },
+      "three": {
+        "male": 1494,
+        "female": 1094
+      },
+      "four": {
+        "male": 241,
+        "female": 182
+      },
+      "five_plus": {
+        "male": 44,
+        "female": 44
+      }
+    }
+  },
+  {
+    "id": 20,
+    "name": "guang_dong",
+    "display_name": "广东",
+    "town": {
+      "one": {
+        "male": 4188,
+        "female": 3519
+      },
+      "two": {
+        "male": 4047,
+        "female": 3613
+      },
+      "three": {
+        "male": 1628,
+        "female": 1297
+      },
+      "four": {
+        "male": 418,
+        "female": 289
+      },
+      "five_plus": {
+        "male": 125,
+        "female": 102
+      }
+    },
+    "city": {
+      "one": {
+        "male": 21426,
+        "female": 17986
+      },
+      "two": {
+        "male": 19378,
+        "female": 17388
+      },
+      "three": {
+        "male": 4521,
+        "female": 3192
+      },
+      "four": {
+        "male": 775,
+        "female": 559
+      },
+      "five_plus": {
+        "male": 171,
+        "female": 108
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 6719,
+        "female": 5806
+      },
+      "two": {
+        "male": 6632,
+        "female": 5899
+      },
+      "three": {
+        "male": 3300,
+        "female": 2731
+      },
+      "four": {
+        "male": 1085,
+        "female": 835
+      },
+      "five_plus": {
+        "male": 372,
+        "female": 310
+      }
+    }
+  },
+  {
+    "id": 21,
+    "name": "guang_xi",
+    "display_name": "广西",
+    "town": {
+      "one": {
+        "male": 2559,
+        "female": 2123
+      },
+      "two": {
+        "male": 3025,
+        "female": 2762
+      },
+      "three": {
+        "male": 1219,
+        "female": 921
+      },
+      "four": {
+        "male": 299,
+        "female": 227
+      },
+      "five_plus": {
+        "male": 106,
+        "female": 84
+      }
+    },
+    "city": {
+      "one": {
+        "male": 4074,
+        "female": 3444
+      },
+      "two": {
+        "male": 4056,
+        "female": 3610
+      },
+      "three": {
+        "male": 886,
+        "female": 600
+      },
+      "four": {
+        "male": 137,
+        "female": 110
+      },
+      "five_plus": {
+        "male": 37,
+        "female": 16
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 3812,
+        "female": 3378
+      },
+      "two": {
+        "male": 4327,
+        "female": 3956
+      },
+      "three": {
+        "male": 2116,
+        "female": 1849
+      },
+      "four": {
+        "male": 679,
+        "female": 525
+      },
+      "five_plus": {
+        "male": 317,
+        "female": 237
+      }
+    }
+  },
+  {
+    "id": 22,
+    "name": "hai_nan",
+    "display_name": "海南",
+    "town": {
+      "one": {
+        "male": 547,
+        "female": 417
+      },
+      "two": {
+        "male": 536,
+        "female": 438
+      },
+      "three": {
+        "male": 199,
+        "female": 122
+      },
+      "four": {
+        "male": 42,
+        "female": 23
+      },
+      "five_plus": {
+        "male": 10,
+        "female": 7
+      }
+    },
+    "city": {
+      "one": {
+        "male": 985,
+        "female": 930
+      },
+      "two": {
+        "male": 1008,
+        "female": 825
+      },
+      "three": {
+        "male": 223,
+        "female": 143
+      },
+      "four": {
+        "male": 25,
+        "female": 22
+      },
+      "five_plus": {
+        "male": 2,
+        "female": 2
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 835,
+        "female": 724
+      },
+      "two": {
+        "male": 801,
+        "female": 716
+      },
+      "three": {
+        "male": 346,
+        "female": 268
+      },
+      "four": {
+        "male": 70,
+        "female": 44
+      },
+      "five_plus": {
+        "male": 33,
+        "female": 16
+      }
+    }
+  },
+  {
+    "id": 23,
+    "name": "chong_qing",
+    "display_name": "重庆",
+    "town": {
+      "one": {
+        "male": 1218,
+        "female": 1122
+      },
+      "two": {
+        "male": 1146,
+        "female": 1162
+      },
+      "three": {
+        "male": 173,
+        "female": 141
+      },
+      "four": {
+        "male": 16,
+        "female": 15
+      },
+      "five_plus": {
+        "male": 9,
+        "female": 5
+      }
+    },
+    "city": {
+      "one": {
+        "male": 4571,
+        "female": 4114
+      },
+      "two": {
+        "male": 3054,
+        "female": 3008
+      },
+      "three": {
+        "male": 206,
+        "female": 192
+      },
+      "four": {
+        "male": 21,
+        "female": 34
+      },
+      "five_plus": {
+        "male": 1,
+        "female": 6
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 1387,
+        "female": 1176
+      },
+      "two": {
+        "male": 1242,
+        "female": 1143
+      },
+      "three": {
+        "male": 238,
+        "female": 220
+      },
+      "four": {
+        "male": 38,
+        "female": 49
+      },
+      "five_plus": {
+        "male": 9,
+        "female": 11
+      }
+    }
+  },
+  {
+    "id": 24,
+    "name": "si_chuan",
+    "display_name": "四川",
+    "town": {
+      "one": {
+        "male": 3846,
+        "female": 3355
+      },
+      "two": {
+        "male": 3415,
+        "female": 3376
+      },
+      "three": {
+        "male": 485,
+        "female": 405
+      },
+      "four": {
+        "male": 86,
+        "female": 87
+      },
+      "five_plus": {
+        "male": 37,
+        "female": 28
+      }
+    },
+    "city": {
+      "one": {
+        "male": 8746,
+        "female": 7496
+      },
+      "two": {
+        "male": 5702,
+        "female": 5268
+      },
+      "three": {
+        "male": 335,
+        "female": 259
+      },
+      "four": {
+        "male": 36,
+        "female": 46
+      },
+      "five_plus": {
+        "male": 5,
+        "female": 1
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 6998,
+        "female": 5989
+      },
+      "two": {
+        "male": 5757,
+        "female": 5493
+      },
+      "three": {
+        "male": 1322,
+        "female": 1193
+      },
+      "four": {
+        "male": 398,
+        "female": 387
+      },
+      "five_plus": {
+        "male": 266,
+        "female": 206
+      }
+    }
+  },
+  {
+    "id": 25,
+    "name": "gui_zhou",
+    "display_name": "贵州",
+    "town": {
+      "one": {
+        "male": 2900,
+        "female": 2544
+      },
+      "two": {
+        "male": 3347,
+        "female": 2997
+      },
+      "three": {
+        "male": 1023,
+        "female": 832
+      },
+      "four": {
+        "male": 218,
+        "female": 175
+      },
+      "five_plus": {
+        "male": 66,
+        "female": 67
+      }
+    },
+    "city": {
+      "one": {
+        "male": 3184,
+        "female": 2904
+      },
+      "two": {
+        "male": 3244,
+        "female": 2856
+      },
+      "three": {
+        "male": 679,
+        "female": 480
+      },
+      "four": {
+        "male": 122,
+        "female": 116
+      },
+      "five_plus": {
+        "male": 42,
+        "female": 21
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 4010,
+        "female": 3468
+      },
+      "two": {
+        "male": 4320,
+        "female": 4075
+      },
+      "three": {
+        "male": 2026,
+        "female": 1702
+      },
+      "four": {
+        "male": 612,
+        "female": 478
+      },
+      "five_plus": {
+        "male": 257,
+        "female": 219
+      }
+    }
+  },
+  {
+    "id": 26,
+    "name": "yun_nan",
+    "display_name": "云南",
+    "town": {
+      "one": {
+        "male": 2976,
+        "female": 2806
+      },
+      "two": {
+        "male": 3130,
+        "female": 3145
+      },
+      "three": {
+        "male": 659,
+        "female": 615
+      },
+      "four": {
+        "male": 115,
+        "female": 130
+      },
+      "five_plus": {
+        "male": 47,
+        "female": 26
+      }
+    },
+    "city": {
+      "one": {
+        "male": 3613,
+        "female": 3395
+      },
+      "two": {
+        "male": 3111,
+        "female": 2938
+      },
+      "three": {
+        "male": 376,
+        "female": 331
+      },
+      "four": {
+        "male": 45,
+        "female": 54
+      },
+      "five_plus": {
+        "male": 13,
+        "female": 8
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 5532,
+        "female": 4822
+      },
+      "two": {
+        "male": 5372,
+        "female": 5162
+      },
+      "three": {
+        "male": 1756,
+        "female": 1564
+      },
+      "four": {
+        "male": 439,
+        "female": 373
+      },
+      "five_plus": {
+        "male": 169,
+        "female": 136
+      }
+    }
+  },
+  {
+    "id": 27,
+    "name": "xi_zang",
+    "display_name": "西藏",
+    "town": {
+      "one": {
+        "male": 150,
+        "female": 136
+      },
+      "two": {
+        "male": 122,
+        "female": 103
+      },
+      "three": {
+        "male": 52,
+        "female": 37
+      },
+      "four": {
+        "male": 15,
+        "female": 21
+      },
+      "five_plus": {
+        "male": 7,
+        "female": 14
+      }
+    },
+    "city": {
+      "one": {
+        "male": 155,
+        "female": 127
+      },
+      "two": {
+        "male": 110,
+        "female": 102
+      },
+      "three": {
+        "male": 15,
+        "female": 12
+      },
+      "four": {
+        "male": 2,
+        "female": 6
+      },
+      "five_plus": {
+        "male": 6,
+        "female": 1
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 614,
+        "female": 553
+      },
+      "two": {
+        "male": 610,
+        "female": 603
+      },
+      "three": {
+        "male": 368,
+        "female": 410
+      },
+      "four": {
+        "male": 171,
+        "female": 215
+      },
+      "five_plus": {
+        "male": 174,
+        "female": 202
+      }
+    }
+  },
+  {
+    "id": 28,
+    "name": "shan_xi_1",
+    "display_name": "陕西",
+    "town": {
+      "one": {
+        "male": 1797,
+        "female": 1526
+      },
+      "two": {
+        "male": 1901,
+        "female": 1840
+      },
+      "three": {
+        "male": 279,
+        "female": 172
+      },
+      "four": {
+        "male": 15,
+        "female": 21
+      },
+      "five_plus": {
+        "male": 4,
+        "female": 5
+      }
+    },
+    "city": {
+      "one": {
+        "male": 3843,
+        "female": 3569
+      },
+      "two": {
+        "male": 2993,
+        "female": 2853
+      },
+      "three": {
+        "male": 242,
+        "female": 165
+      },
+      "four": {
+        "male": 14,
+        "female": 22
+      },
+      "five_plus": {
+        "male": 4,
+        "female": 5
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 2416,
+        "female": 2112
+      },
+      "two": {
+        "male": 2348,
+        "female": 2404
+      },
+      "three": {
+        "male": 351,
+        "female": 264
+      },
+      "four": {
+        "male": 54,
+        "female": 26
+      },
+      "five_plus": {
+        "male": 4,
+        "female": 5
+      }
+    }
+  },
+  {
+    "id": 29,
+    "name": "gan_su",
+    "display_name": "甘肃",
+    "town": {
+      "one": {
+        "male": 1511,
+        "female": 1288
+      },
+      "two": {
+        "male": 1703,
+        "female": 1644
+      },
+      "three": {
+        "male": 327,
+        "female": 253
+      },
+      "four": {
+        "male": 65,
+        "female": 37
+      },
+      "five_plus": {
+        "male": 22,
+        "female": 15
+      }
+    },
+    "city": {
+      "one": {
+        "male": 2116,
+        "female": 1941
+      },
+      "two": {
+        "male": 1678,
+        "female": 1564
+      },
+      "three": {
+        "male": 196,
+        "female": 132
+      },
+      "four": {
+        "male": 18,
+        "female": 19
+      },
+      "five_plus": {
+        "male": 3,
+        "female": 2
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 2383,
+        "female": 2191
+      },
+      "two": {
+        "male": 2397,
+        "female": 2364
+      },
+      "three": {
+        "male": 706,
+        "female": 681
+      },
+      "four": {
+        "male": 199,
+        "female": 176
+      },
+      "five_plus": {
+        "male": 88,
+        "female": 64
+      }
+    }
+  },
+  {
+    "id": 30,
+    "name": "qing_hai",
+    "display_name": "青海",
+    "town": {
+      "one": {
+        "male": 366,
+        "female": 332
+      },
+      "two": {
+        "male": 314,
+        "female": 298
+      },
+      "three": {
+        "male": 79,
+        "female": 78
+      },
+      "four": {
+        "male": 22,
+        "female": 25
+      },
+      "five_plus": {
+        "male": 19,
+        "female": 10
+      }
+    },
+    "city": {
+      "one": {
+        "male": 618,
+        "female": 557
+      },
+      "two": {
+        "male": 429,
+        "female": 393
+      },
+      "three": {
+        "male": 58,
+        "female": 57
+      },
+      "four": {
+        "male": 12,
+        "female": 12
+      },
+      "five_plus": {
+        "male": 3,
+        "female": 2
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 609,
+        "female": 479
+      },
+      "two": {
+        "male": 487,
+        "female": 467
+      },
+      "three": {
+        "male": 213,
+        "female": 203
+      },
+      "four": {
+        "male": 91,
+        "female": 75
+      },
+      "five_plus": {
+        "male": 53,
+        "female": 61
+      }
+    }
+  },
+  {
+    "id": 31,
+    "name": "ning_xia",
+    "display_name": "宁夏",
+    "town": {
+      "one": {
+        "male": 447,
+        "female": 475
+      },
+      "two": {
+        "male": 440,
+        "female": 429
+      },
+      "three": {
+        "male": 156,
+        "female": 121
+      },
+      "four": {
+        "male": 34,
+        "female": 32
+      },
+      "five_plus": {
+        "male": 12,
+        "female": 4
+      }
+    },
+    "city": {
+      "one": {
+        "male": 913,
+        "female": 820
+      },
+      "two": {
+        "male": 771,
+        "female": 780
+      },
+      "three": {
+        "male": 109,
+        "female": 94
+      },
+      "four": {
+        "male": 10,
+        "female": 11
+      },
+      "five_plus": {
+        "male": 2,
+        "female": 4
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 555,
+        "female": 536
+      },
+      "two": {
+        "male": 527,
+        "female": 524
+      },
+      "three": {
+        "male": 313,
+        "female": 265
+      },
+      "four": {
+        "male": 135,
+        "female": 93
+      },
+      "five_plus": {
+        "male": 50,
+        "female": 46
+      }
+    }
+  },
+  {
+    "id": 32,
+    "name": "xin_jiang",
+    "display_name": "新疆",
+    "town": {
+      "one": {
+        "male": 1265,
+        "female": 1082
+      },
+      "two": {
+        "male": 922,
+        "female": 876
+      },
+      "three": {
+        "male": 110,
+        "female": 95
+      },
+      "four": {
+        "male": 11,
+        "female": 18
+      },
+      "five_plus": {
+        "male": 2,
+        "female": 2
+      }
+    },
+    "city": {
+      "one": {
+        "male": 2319,
+        "female": 2234
+      },
+      "two": {
+        "male": 1489,
+        "female": 1438
+      },
+      "three": {
+        "male": 131,
+        "female": 102
+      },
+      "four": {
+        "male": 15,
+        "female": 37
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 5
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 1798,
+        "female": 1643
+      },
+      "two": {
+        "male": 1277,
+        "female": 1247
+      },
+      "three": {
+        "male": 404,
+        "female": 376
+      },
+      "four": {
+        "male": 31,
+        "female": 66
+      },
+      "five_plus": {
+        "male": 8,
+        "female": 17
+      }
+    }
+  },
+  {
+    "id": 33,
+    "name": "ao_men",
+    "display_name": "澳门",
+    "town": {
+      "one": {
+        "male": 0,
+        "female": 0
+      },
+      "two": {
+        "male": 0,
+        "female": 0
+      },
+      "three": {
+        "male": 0,
+        "female": 0
+      },
+      "four": {
+        "male": 0,
+        "female": 0
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 0
+      }
+    },
+    "city": {
+      "one": {
+        "male": 1905,
+        "female": 1807
+      },
+      "two": {
+        "male": 0,
+        "female": 0
+      },
+      "three": {
+        "male": 0,
+        "female": 0
+      },
+      "four": {
+        "male": 0,
+        "female": 0
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 5
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 0,
+        "female": 0
+      },
+      "two": {
+        "male": 0,
+        "female": 0
+      },
+      "three": {
+        "male": 0,
+        "female": 0
+      },
+      "four": {
+        "male": 0,
+        "female": 0
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 0
+      }
+    }
+  },
+  {
+    "id": 34,
+    "name": "xiang_gang",
+    "display_name": "香港",
+    "town": {
+      "one": {
+        "male": 0,
+        "female": 0
+      },
+      "two": {
+        "male": 0,
+        "female": 0
+      },
+      "three": {
+        "male": 0,
+        "female": 0
+      },
+      "four": {
+        "male": 0,
+        "female": 0
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 0
+      }
+    },
+    "city": {
+      "one": {
+        "male": 17400,
+        "female": 15800
+      },
+      "two": {
+        "male": 0,
+        "female": 0
+      },
+      "three": {
+        "male": 0,
+        "female": 0
+      },
+      "four": {
+        "male": 0,
+        "female": 0
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 5
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 0,
+        "female": 0
+      },
+      "two": {
+        "male": 0,
+        "female": 0
+      },
+      "three": {
+        "male": 0,
+        "female": 0
+      },
+      "four": {
+        "male": 0,
+        "female": 0
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 0
+      }
+    }
+  },
+  {
+    "id": 35,
+    "name": "tai_wan",
+    "display_name": "台湾",
+    "town": {
+      "one": {
+        "male": 0,
+        "female": 0
+      },
+      "two": {
+        "male": 0,
+        "female": 0
+      },
+      "three": {
+        "male": 0,
+        "female": 0
+      },
+      "four": {
+        "male": 0,
+        "female": 0
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 0
+      }
+    },
+    "city": {
+      "one": {
+        "male": 71208,
+        "female": 66205
+      },
+      "two": {
+        "male": 0,
+        "female": 0
+      },
+      "three": {
+        "male": 0,
+        "female": 0
+      },
+      "four": {
+        "male": 0,
+        "female": 0
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 5
+      }
+    },
+    "countryside": {
+      "one": {
+        "male": 0,
+        "female": 0
+      },
+      "two": {
+        "male": 0,
+        "female": 0
+      },
+      "three": {
+        "male": 0,
+        "female": 0
+      },
+      "four": {
+        "male": 0,
+        "female": 0
+      },
+      "five_plus": {
+        "male": 0,
+        "female": 0
+      }
+    }
+  }
+]
