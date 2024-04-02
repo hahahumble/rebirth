@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import Title from '@/components/title';
 import Navbar from '@/components/navbar';
 import ResetModal from '@/components/reset-modal';
+import ShareModal from '@/components/share-modal';
 
 export const metadata: Metadata = {
   title: '投胎模拟器「中国版」 toutai.cc',
@@ -18,6 +19,7 @@ export default function HomepageLayout({
   return (
     <>
       <ResetModal />
+      <ShareModal />
       <Container width="640px" padding={1}>
         <View
           padding={4}
