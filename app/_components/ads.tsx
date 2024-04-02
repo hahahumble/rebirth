@@ -20,9 +20,7 @@ const Ads = () => {
       className="adsbygoogle adbanner-customize"
       style={{
         display: 'block',
-        textAlign: 'center',
-        paddingInline: '1rem',
-        paddingBottom: '2rem'
+        textAlign: 'center'
       }}
       data-ad-client="ca-pub-1341437621876451"
       data-ad-slot="9971145124"

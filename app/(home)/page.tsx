@@ -253,7 +253,9 @@ function Page() {
           </View>
         </View>
       </View>
-      <Ads />
+      <View paddingBottom={4} paddingInline={4}>
+        <Ads />
+      </View>
     </>
   );
 }
