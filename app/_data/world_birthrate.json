@@ -1,0 +1,1286 @@
+[
+  {
+    "country": "Afghanistan",
+    "name": "阿富汗",
+    "population": 41.1,
+    "birthRate": 36
+  },
+  {
+    "country": "Albania",
+    "name": "阿尔巴尼亚",
+    "population": 2.8,
+    "birthRate": 10
+  },
+  {
+    "country": "Algeria",
+    "name": "阿尔及利亚",
+    "population": 44.9,
+    "birthRate": 22
+  },
+  {
+    "country": "American Samoa",
+    "name": "美属萨摩亚",
+    "population": 0,
+    "birthRate": null
+  },
+  {
+    "country": "Andorra",
+    "name": "安道尔",
+    "population": 0.1,
+    "birthRate": null
+  },
+  {
+    "country": "Angola",
+    "name": "安哥拉",
+    "population": 35.6,
+    "birthRate": 39
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "name": "安提瓜和巴布达",
+    "population": 0.1,
+    "birthRate": 12
+  },
+  {
+    "country": "Argentina",
+    "name": "阿根廷",
+    "population": 46.2,
+    "birthRate": 14
+  },
+  {
+    "country": "Armenia",
+    "name": "亚美尼亚",
+    "population": 2.8,
+    "birthRate": 12
+  },
+  {
+    "country": "Aruba",
+    "name": "阿鲁巴",
+    "population": 0.1,
+    "birthRate": 7
+  },
+  {
+    "country": "Australia",
+    "name": "澳大利亚",
+    "population": 26,
+    "birthRate": 12
+  },
+  {
+    "country": "Austria",
+    "name": "奥地利",
+    "population": 9,
+    "birthRate": 10
+  },
+  {
+    "country": "Azerbaijan",
+    "name": "阿塞拜疆",
+    "population": 10.1,
+    "birthRate": 11
+  },
+  {
+    "country": "Bahamas, The",
+    "name": "巴哈马",
+    "population": 0.4,
+    "birthRate": 11
+  },
+  {
+    "country": "Bahrain",
+    "name": "巴林",
+    "population": 1.5,
+    "birthRate": 12
+  },
+  {
+    "country": "Bangladesh",
+    "name": "孟加拉国",
+    "population": 171.2,
+    "birthRate": 18
+  },
+  {
+    "country": "Barbados",
+    "name": "巴巴多斯",
+    "population": 0.3,
+    "birthRate": 11
+  },
+  {
+    "country": "Belarus",
+    "name": "白俄罗斯",
+    "population": 9.2,
+    "birthRate": 9
+  },
+  {
+    "country": "Belgium",
+    "name": "比利时",
+    "population": 11.7,
+    "birthRate": 10
+  },
+  {
+    "country": "Belize",
+    "name": "伯利兹",
+    "population": 0.4,
+    "birthRate": 18
+  },
+  {
+    "country": "Benin",
+    "name": "贝宁",
+    "population": 13.4,
+    "birthRate": 37
+  },
+  {
+    "country": "Bermuda",
+    "name": "百慕大",
+    "population": 0.1,
+    "birthRate": 8
+  },
+  {
+    "country": "Bhutan",
+    "name": "不丹",
+    "population": 0.8,
+    "birthRate": 12
+  },
+  {
+    "country": "Bolivia",
+    "name": "玻利维亚",
+    "population": 12.2,
+    "birthRate": 22
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "name": "波斯尼亚和黑塞哥维那",
+    "population": 3.2,
+    "birthRate": 8
+  },
+  {
+    "country": "Botswana",
+    "name": "博茨瓦纳",
+    "population": 2.6,
+    "birthRate": 24
+  },
+  {
+    "country": "Brazil",
+    "name": "巴西",
+    "population": 215.3,
+    "birthRate": 13
+  },
+  {
+    "country": "Brunei Darussalam",
+    "name": "文莱",
+    "population": 0.4,
+    "birthRate": 14
+  },
+  {
+    "country": "Bulgaria",
+    "name": "保加利亚",
+    "population": 6.5,
+    "birthRate": 9
+  },
+  {
+    "country": "Burkina Faso",
+    "name": "布基纳法索",
+    "population": 22.7,
+    "birthRate": 36
+  },
+  {
+    "country": "Burundi",
+    "name": "布隆迪",
+    "population": 12.9,
+    "birthRate": 35
+  },
+  {
+    "country": "Cabo Verde",
+    "name": "佛得角",
+    "population": 0.6,
+    "birthRate": 17
+  },
+  {
+    "country": "Cambodia",
+    "name": "柬埔寨",
+    "population": 16.8,
+    "birthRate": 19
+  },
+  {
+    "country": "Cameroon",
+    "name": "喀麦隆",
+    "population": 27.9,
+    "birthRate": 35
+  },
+  {
+    "country": "Canada",
+    "name": "加拿大",
+    "population": 38.9,
+    "birthRate": 10
+  },
+  {
+    "country": "Cayman Islands",
+    "name": "开曼群岛",
+    "population": 0.1,
+    "birthRate": 12
+  },
+  {
+    "country": "Central African Republic",
+    "name": "中非共和国",
+    "population": 5.6,
+    "birthRate": 43
+  },
+  {
+    "country": "Chad",
+    "name": "乍得",
+    "population": 17.7,
+    "birthRate": 43
+  },
+  {
+    "country": "Channel Islands",
+    "name": "海峡群岛",
+    "population": 0.2,
+    "birthRate": 10
+  },
+  {
+    "country": "Chile",
+    "name": "智利",
+    "population": 19.6,
+    "birthRate": 12
+  },
+  {
+    "country": "China",
+    "name": "中国",
+    "population": 1412.2,
+    "birthRate": 8
+  },
+  {
+    "country": "Hong Kong SAR, China",
+    "name": "中国香港特别行政区",
+    "population": 7.3,
+    "birthRate": 5
+  },
+  {
+    "country": "Macao SAR, China",
+    "name": "中国澳门特别行政区",
+    "population": 0.7,
+    "birthRate": 10
+  },
+  {
+    "country": "Colombia",
+    "name": "哥伦比亚",
+    "population": 51.9,
+    "birthRate": 14
+  },
+  {
+    "country": "Comoros",
+    "name": "科摩罗",
+    "population": 0.8,
+    "birthRate": 29
+  },
+  {
+    "country": "Congo, Dem. Rep.",
+    "name": "刚果民主共和国",
+    "population": 99,
+    "birthRate": 42
+  },
+  {
+    "country": "Congo, Rep.",
+    "name": "刚果共和国",
+    "population": 6,
+    "birthRate": 31
+  },
+  {
+    "country": "Costa Rica",
+    "name": "哥斯达黎加",
+    "population": 5.2,
+    "birthRate": 12
+  },
+  {
+    "country": "Cote d'Ivoire",
+    "name": "科特迪瓦",
+    "population": 28.2,
+    "birthRate": 34
+  },
+  {
+    "country": "Croatia",
+    "name": "克罗地亚",
+    "population": 3.9,
+    "birthRate": 9
+  },
+  {
+    "country": "Cuba",
+    "name": "古巴",
+    "population": 11.2,
+    "birthRate": 9
+  },
+  {
+    "country": "Curacao",
+    "name": "库拉索",
+    "population": 0.1,
+    "birthRate": 9
+  },
+  {
+    "country": "Cyprus",
+    "name": "塞浦路斯",
+    "population": 1.3,
+    "birthRate": 10
+  },
+  {
+    "country": "Czechia",
+    "name": "捷克",
+    "population": 10.7,
+    "birthRate": 11
+  },
+  {
+    "country": "Denmark",
+    "name": "丹麦",
+    "population": 5.9,
+    "birthRate": 11
+  },
+  {
+    "country": "Djibouti",
+    "name": "吉布提",
+    "population": 1.1,
+    "birthRate": 22
+  },
+  {
+    "country": "Dominica",
+    "name": "多米尼克",
+    "population": 0.1,
+    "birthRate": 13
+  },
+  {
+    "country": "Dominican Republic",
+    "name": "多米尼加共和国",
+    "population": 11.2,
+    "birthRate": 18
+  },
+  {
+    "country": "Ecuador",
+    "name": "厄瓜多尔",
+    "population": 18,
+    "birthRate": 17
+  },
+  {
+    "country": "Egypt, Arab Rep.",
+    "name": "埃及",
+    "population": 111,
+    "birthRate": 23
+  },
+  {
+    "country": "El Salvador",
+    "name": "萨尔瓦多",
+    "population": 6.3,
+    "birthRate": 16
+  },
+  {
+    "country": "Equatorial Guinea",
+    "name": "赤道几内亚",
+    "population": 1.7,
+    "birthRate": 30
+  },
+  {
+    "country": "Eritrea",
+    "name": "厄立特里亚",
+    "population": 3.7,
+    "birthRate": 29
+  },
+  {
+    "country": "Estonia",
+    "name": "爱沙尼亚",
+    "population": 1.3,
+    "birthRate": 10
+  },
+  {
+    "country": "Eswatini",
+    "name": "斯威士兰",
+    "population": 1.2,
+    "birthRate": 24
+  },
+  {
+    "country": "Ethiopia",
+    "name": "埃塞俄比亚",
+    "population": 123.4,
+    "birthRate": 32
+  },
+  {
+    "country": "Faroe Islands",
+    "name": "法罗群岛",
+    "population": 0.1,
+    "birthRate": 13
+  },
+  {
+    "country": "Fiji",
+    "name": "斐济",
+    "population": 0.9,
+    "birthRate": 19
+  },
+  {
+    "country": "Finland",
+    "name": "芬兰",
+    "population": 5.6,
+    "birthRate": 9
+  },
+  {
+    "country": "France",
+    "name": "法国",
+    "population": 68,
+    "birthRate": 11
+  },
+  {
+    "country": "French Polynesia",
+    "name": "法属波利尼西亚",
+    "population": 0.3,
+    "birthRate": 13
+  },
+  {
+    "country": "Gabon",
+    "name": "加蓬",
+    "population": 2.4,
+    "birthRate": 27
+  },
+  {
+    "country": "Gambia, The",
+    "name": "冈比亚",
+    "population": 2.7,
+    "birthRate": 33
+  },
+  {
+    "country": "Georgia",
+    "name": "格鲁吉亚",
+    "population": 3.7,
+    "birthRate": 13
+  },
+  {
+    "country": "Germany",
+    "name": "德国",
+    "population": 83.8,
+    "birthRate": 10
+  },
+  {
+    "country": "Ghana",
+    "name": "加纳",
+    "population": 33.5,
+    "birthRate": 28
+  },
+  {
+    "country": "Greece",
+    "name": "希腊",
+    "population": 10.4,
+    "birthRate": 8
+  },
+  {
+    "country": "Greenland",
+    "name": "格陵兰",
+    "population": 0.1,
+    "birthRate": 13
+  },
+  {
+    "country": "Grenada",
+    "name": "格林纳达",
+    "population": 0.1,
+    "birthRate": 16
+  },
+  {
+    "country": "Guam",
+    "name": "关岛",
+    "population": 0.2,
+    "birthRate": 16
+  },
+  {
+    "country": "Guatemala",
+    "name": "危地马拉",
+    "population": 17.4,
+    "birthRate": 21
+  },
+  {
+    "country": "Guinea",
+    "name": "几内亚",
+    "population": 13.9,
+    "birthRate": 34
+  },
+  {
+    "country": "Guinea-Bissau",
+    "name": "几内亚比绍",
+    "population": 2.1,
+    "birthRate": 31
+  },
+  {
+    "country": "Guyana",
+    "name": "圭亚那",
+    "population": 0.8,
+    "birthRate": 20
+  },
+  {
+    "country": "Haiti",
+    "name": "海地",
+    "population": 11.6,
+    "birthRate": 23
+  },
+  {
+    "country": "Honduras",
+    "name": "洪都拉斯",
+    "population": 10.4,
+    "birthRate": 21
+  },
+  {
+    "country": "Hungary",
+    "name": "匈牙利",
+    "population": 9.6,
+    "birthRate": 10
+  },
+  {
+    "country": "Iceland",
+    "name": "冰岛",
+    "population": 0.4,
+    "birthRate": 13
+  },
+  {
+    "country": "India",
+    "name": "印度",
+    "population": 1417.2,
+    "birthRate": 16
+  },
+  {
+    "country": "Indonesia",
+    "name": "印度尼西亚",
+    "population": 275.5,
+    "birthRate": 16
+  },
+  {
+    "country": "Iran, Islamic Rep.",
+    "name": "伊朗",
+    "population": 88.6,
+    "birthRate": 14
+  },
+  {
+    "country": "Iraq",
+    "name": "伊拉克",
+    "population": 44.5,
+    "birthRate": 27
+  },
+  {
+    "country": "Ireland",
+    "name": "爱尔兰",
+    "population": 5.1,
+    "birthRate": 12
+  },
+  {
+    "country": "Isle of Man",
+    "name": "马恩岛",
+    "population": 0.1,
+    "birthRate": 9
+  },
+  {
+    "country": "Israel",
+    "name": "以色列",
+    "population": 9.6,
+    "birthRate": 20
+  },
+  {
+    "country": "Italy",
+    "name": "意大利",
+    "population": 58.9,
+    "birthRate": 7
+  },
+  {
+    "country": "Jamaica",
+    "name": "牙买加",
+    "population": 2.8,
+    "birthRate": 12
+  },
+  {
+    "country": "Japan",
+    "name": "日本",
+    "population": 125.1,
+    "birthRate": 7
+  },
+  {
+    "country": "Jordan",
+    "name": "约旦",
+    "population": 11.3,
+    "birthRate": 22
+  },
+  {
+    "country": "Kazakhstan",
+    "name": "哈萨克斯坦",
+    "population": 19.6,
+    "birthRate": 24
+  },
+  {
+    "country": "Kenya",
+    "name": "肯尼亚",
+    "population": 54,
+    "birthRate": 28
+  },
+  {
+    "country": "Kiribati",
+    "name": "基里巴斯",
+    "population": 0.1,
+    "birthRate": 27
+  },
+  {
+    "country": "Korea, Dem. People's Rep.",
+    "name": "朝鲜",
+    "population": 26.1,
+    "birthRate": 13
+  },
+  {
+    "country": "Korea, Rep.",
+    "name": "韩国",
+    "population": 51.6,
+    "birthRate": 5
+  },
+  {
+    "country": "Kosovo",
+    "name": "科索沃",
+    "population": 1.8,
+    "birthRate": 11
+  },
+  {
+    "country": "Kuwait",
+    "name": "科威特",
+    "population": 4.3,
+    "birthRate": 10
+  },
+  {
+    "country": "Kyrgyz Republic",
+    "name": "吉尔吉斯斯坦",
+    "population": 7,
+    "birthRate": 22
+  },
+  {
+    "country": "Lao PDR",
+    "name": "老挝",
+    "population": 7.5,
+    "birthRate": 22
+  },
+  {
+    "country": "Latvia",
+    "name": "拉脱维亚",
+    "population": 1.9,
+    "birthRate": 9
+  },
+  {
+    "country": "Lebanon",
+    "name": "黎巴嫩",
+    "population": 5.5,
+    "birthRate": 15
+  },
+  {
+    "country": "Lesotho",
+    "name": "莱索托",
+    "population": 2.3,
+    "birthRate": 26
+  },
+  {
+    "country": "Liberia",
+    "name": "利比里亚",
+    "population": 5.3,
+    "birthRate": 31
+  },
+  {
+    "country": "Libya",
+    "name": "利比亚",
+    "population": 6.8,
+    "birthRate": 18
+  },
+  {
+    "country": "Liechtenstein",
+    "name": "列支敦士登",
+    "population": 0,
+    "birthRate": 10
+  },
+  {
+    "country": "Lithuania",
+    "name": "立陶宛",
+    "population": 2.8,
+    "birthRate": 8
+  },
+  {
+    "country": "Luxembourg",
+    "name": "卢森堡",
+    "population": 0.7,
+    "birthRate": 11
+  },
+  {
+    "country": "Madagascar",
+    "name": "马达加斯加",
+    "population": 29.6,
+    "birthRate": 31
+  },
+  {
+    "country": "Malawi",
+    "name": "马拉维",
+    "population": 20.4,
+    "birthRate": 33
+  },
+  {
+    "country": "Malaysia",
+    "name": "马来西亚",
+    "population": 33.9,
+    "birthRate": 15
+  },
+  {
+    "country": "Maldives",
+    "name": "马尔代夫",
+    "population": 0.5,
+    "birthRate": 14
+  },
+  {
+    "country": "Mali",
+    "name": "马里",
+    "population": 22.6,
+    "birthRate": 42
+  },
+  {
+    "country": "Malta",
+    "name": "马耳他",
+    "population": 0.5,
+    "birthRate": 9
+  },
+  {
+    "country": "Marshall Islands",
+    "name": "马绍尔群岛",
+    "population": 0,
+    "birthRate": 19
+  },
+  {
+    "country": "Mauritania",
+    "name": "毛里塔尼亚",
+    "population": 4.7,
+    "birthRate": 33
+  },
+  {
+    "country": "Mauritius",
+    "name": "毛里求斯",
+    "population": 1.3,
+    "birthRate": 10
+  },
+  {
+    "country": "Mexico",
+    "name": "墨西哥",
+    "population": 127.5,
+    "birthRate": 15
+  },
+  {
+    "country": "Micronesia, Fed. Sts.",
+    "name": "密克罗尼西亚联邦",
+    "population": 0.1,
+    "birthRate": 21
+  },
+  {
+    "country": "Moldova",
+    "name": "摩尔多瓦",
+    "population": 2.5,
+    "birthRate": 12
+  },
+  {
+    "country": "Monaco",
+    "name": "摩纳哥",
+    "population": 0,
+    "birthRate": null
+  },
+  {
+    "country": "Mongolia",
+    "name": "蒙古",
+    "population": 3.4,
+    "birthRate": 21
+  },
+  {
+    "country": "Montenegro",
+    "name": "黑山",
+    "population": 0.6,
+    "birthRate": 11
+  },
+  {
+    "country": "Morocco",
+    "name": "摩洛哥",
+    "population": 37.5,
+    "birthRate": 18
+  },
+  {
+    "country": "Mozambique",
+    "name": "莫桑比克",
+    "population": 33,
+    "birthRate": 37
+  },
+  {
+    "country": "Myanmar",
+    "name": "缅甸",
+    "population": 54.2,
+    "birthRate": 17
+  },
+  {
+    "country": "Namibia",
+    "name": "纳米比亚",
+    "population": 2.6,
+    "birthRate": 27
+  },
+  {
+    "country": "Nepal",
+    "name": "尼泊尔",
+    "population": 30.5,
+    "birthRate": 20
+  },
+  {
+    "country": "Netherlands",
+    "name": "荷兰",
+    "population": 17.7,
+    "birthRate": 10
+  },
+  {
+    "country": "New Caledonia",
+    "name": "新喀里多尼亚",
+    "population": 0.3,
+    "birthRate": 14
+  },
+  {
+    "country": "New Zealand",
+    "name": "新西兰",
+    "population": 5.1,
+    "birthRate": 11
+  },
+  {
+    "country": "Nicaragua",
+    "name": "尼加拉瓜",
+    "population": 6.9,
+    "birthRate": 21
+  },
+  {
+    "country": "Niger",
+    "name": "尼日尔",
+    "population": 26.2,
+    "birthRate": 45
+  },
+  {
+    "country": "Nigeria",
+    "name": "尼日利亚",
+    "population": 218.5,
+    "birthRate": 37
+  },
+  {
+    "country": "North Macedonia",
+    "name": "北马其顿",
+    "population": 2.1,
+    "birthRate": 10
+  },
+  {
+    "country": "Northern Mariana Islands",
+    "name": "北马里亚纳群岛",
+    "population": 0,
+    "birthRate": null
+  },
+  {
+    "country": "Norway",
+    "name": "挪威",
+    "population": 5.5,
+    "birthRate": 10
+  },
+  {
+    "country": "Oman",
+    "name": "阿曼",
+    "population": 4.6,
+    "birthRate": 18
+  },
+  {
+    "country": "Pakistan",
+    "name": "巴基斯坦",
+    "population": 235.8,
+    "birthRate": 28
+  },
+  {
+    "country": "Palau",
+    "name": "帕劳",
+    "population": 0,
+    "birthRate": 13
+  },
+  {
+    "country": "Panama",
+    "name": "巴拿马",
+    "population": 4.4,
+    "birthRate": 18
+  },
+  {
+    "country": "Papua New Guinea",
+    "name": "巴布亚新几内亚",
+    "population": 10.1,
+    "birthRate": 26
+  },
+  {
+    "country": "Paraguay",
+    "name": "巴拉圭",
+    "population": 6.8,
+    "birthRate": 21
+  },
+  {
+    "country": "Peru",
+    "name": "秘鲁",
+    "population": 34,
+    "birthRate": 18
+  },
+  {
+    "country": "Philippines",
+    "name": "菲律宾",
+    "population": 115.6,
+    "birthRate": 22
+  },
+  {
+    "country": "Poland",
+    "name": "波兰",
+    "population": 36.8,
+    "birthRate": 9
+  },
+  {
+    "country": "Portugal",
+    "name": "葡萄牙",
+    "population": 10.4,
+    "birthRate": 8
+  },
+  {
+    "country": "Puerto Rico",
+    "name": "波多黎各",
+    "population": 3.2,
+    "birthRate": 6
+  },
+  {
+    "country": "Qatar",
+    "name": "卡塔尔",
+    "population": 2.7,
+    "birthRate": 10
+  },
+  {
+    "country": "Romania",
+    "name": "罗马尼亚",
+    "population": 19,
+    "birthRate": 9
+  },
+  {
+    "country": "Russian Federation",
+    "name": "俄罗斯",
+    "population": 144.2,
+    "birthRate": 10
+  },
+  {
+    "country": "Rwanda",
+    "name": "卢旺达",
+    "population": 13.8,
+    "birthRate": 30
+  },
+  {
+    "country": "Samoa",
+    "name": "萨摩亚",
+    "population": 0.2,
+    "birthRate": 27
+  },
+  {
+    "country": "San Marino",
+    "name": "圣马力诺",
+    "population": 0,
+    "birthRate": 6
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "name": "圣多美和普林西比",
+    "population": 0.2,
+    "birthRate": 28
+  },
+  {
+    "country": "Saudi Arabia",
+    "name": "沙特阿拉伯",
+    "population": 36.4,
+    "birthRate": 17
+  },
+  {
+    "country": "Senegal",
+    "name": "塞内加尔",
+    "population": 17.3,
+    "birthRate": 33
+  },
+  {
+    "country": "Serbia",
+    "name": "塞尔维亚",
+    "population": 6.7,
+    "birthRate": 9
+  },
+  {
+    "country": "Seychelles",
+    "name": "塞舌尔",
+    "population": 0.1,
+    "birthRate": 17
+  },
+  {
+    "country": "Sierra Leone",
+    "name": "塞拉利昂",
+    "population": 8.6,
+    "birthRate": 31
+  },
+  {
+    "country": "Singapore",
+    "name": "新加坡",
+    "population": 5.6,
+    "birthRate": 9
+  },
+  {
+    "country": "Sint Maarten (Dutch part)",
+    "name": "荷属圣马丁",
+    "population": 0,
+    "birthRate": 11
+  },
+  {
+    "country": "Slovak Republic",
+    "name": "斯洛伐克",
+    "population": 5.4,
+    "birthRate": 10
+  },
+  {
+    "country": "Slovenia",
+    "name": "斯洛文尼亚",
+    "population": 2.1,
+    "birthRate": 9
+  },
+  {
+    "country": "Solomon Islands",
+    "name": "所罗门群岛",
+    "population": 0.7,
+    "birthRate": 30
+  },
+  {
+    "country": "Somalia",
+    "name": "索马里",
+    "population": 17.6,
+    "birthRate": 44
+  },
+  {
+    "country": "South Africa",
+    "name": "南非",
+    "population": 59.9,
+    "birthRate": 20
+  },
+  {
+    "country": "South Sudan",
+    "name": "南苏丹",
+    "population": 10.9,
+    "birthRate": 29
+  },
+  {
+    "country": "Spain",
+    "name": "西班牙",
+    "population": 47.8,
+    "birthRate": 7
+  },
+  {
+    "country": "Sri Lanka",
+    "name": "斯里兰卡",
+    "population": 22.2,
+    "birthRate": 14
+  },
+  {
+    "country": "St. Kitts and Nevis",
+    "name": "圣基茨和尼维斯",
+    "population": 0,
+    "birthRate": 12
+  },
+  {
+    "country": "St. Lucia",
+    "name": "圣卢西亚",
+    "population": 0.2,
+    "birthRate": 11
+  },
+  {
+    "country": "St. Martin (French part)",
+    "name": "法属圣马丁",
+    "population": 0,
+    "birthRate": 15
+  },
+  {
+    "country": "St. Vincent and the Grenadines",
+    "name": "圣文森特和格林纳丁斯",
+    "population": 0.1,
+    "birthRate": 13
+  },
+  {
+    "country": "Sudan",
+    "name": "苏丹",
+    "population": 46.9,
+    "birthRate": 34
+  },
+  {
+    "country": "Suriname",
+    "name": "苏里南",
+    "population": 0.6,
+    "birthRate": 18
+  },
+  {
+    "country": "Sweden",
+    "name": "瑞典",
+    "population": 10.5,
+    "birthRate": 11
+  },
+  {
+    "country": "Switzerland",
+    "name": "瑞士",
+    "population": 8.8,
+    "birthRate": 10
+  },
+  {
+    "country": "Syrian Arab Republic",
+    "name": "叙利亚",
+    "population": 22.1,
+    "birthRate": 20
+  },
+  {
+    "country": "Tajikistan",
+    "name": "塔吉克斯坦",
+    "population": 10,
+    "birthRate": 27
+  },
+  {
+    "country": "Tanzania",
+    "name": "坦桑尼亚",
+    "population": 65.5,
+    "birthRate": 36
+  },
+  {
+    "country": "Thailand",
+    "name": "泰国",
+    "population": 71.7,
+    "birthRate": 9
+  },
+  {
+    "country": "Timor-Leste",
+    "name": "东帝汶",
+    "population": 1.3,
+    "birthRate": 25
+  },
+  {
+    "country": "Togo",
+    "name": "多哥",
+    "population": 8.8,
+    "birthRate": 32
+  },
+  {
+    "country": "Tonga",
+    "name": "汤加",
+    "population": 0.1,
+    "birthRate": 23
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "name": "特立尼达和多巴哥",
+    "population": 1.5,
+    "birthRate": 12
+  },
+  {
+    "country": "Tunisia",
+    "name": "突尼斯",
+    "population": 12.4,
+    "birthRate": 16
+  },
+  {
+    "country": "Turkiye",
+    "name": "土耳其",
+    "population": 85,
+    "birthRate": 15
+  },
+  {
+    "country": "Turkmenistan",
+    "name": "土库曼斯坦",
+    "population": 6.4,
+    "birthRate": 22
+  },
+  {
+    "country": "Turks and Caicos Islands",
+    "name": "特克斯和凯科斯群岛",
+    "population": 0,
+    "birthRate": 12
+  },
+  {
+    "country": "Tuvalu",
+    "name": "图瓦卢",
+    "population": 0,
+    "birthRate": 23
+  },
+  {
+    "country": "Uganda",
+    "name": "乌干达",
+    "population": 47.2,
+    "birthRate": 37
+  },
+  {
+    "country": "Ukraine",
+    "name": "乌克兰",
+    "population": 38,
+    "birthRate": 7
+  },
+  {
+    "country": "United Arab Emirates",
+    "name": "阿拉伯联合酋长国",
+    "population": 9.4,
+    "birthRate": 10
+  },
+  {
+    "country": "United Kingdom",
+    "name": "英国",
+    "population": 67,
+    "birthRate": 10
+  },
+  {
+    "country": "United States",
+    "name": "美国",
+    "population": 333.3,
+    "birthRate": 11
+  },
+  {
+    "country": "Uruguay",
+    "name": "乌拉圭",
+    "population": 3.4,
+    "birthRate": 10
+  },
+  {
+    "country": "Uzbekistan",
+    "name": "乌兹别克斯坦",
+    "population": 35.6,
+    "birthRate": 26
+  },
+  {
+    "country": "Vanuatu",
+    "name": "瓦努阿图",
+    "population": 0.3,
+    "birthRate": 29
+  },
+  {
+    "country": "Venezuela, RB",
+    "name": "委内瑞拉",
+    "population": 28.3,
+    "birthRate": 16
+  },
+  {
+    "country": "Viet Nam",
+    "name": "越南",
+    "population": 98.2,
+    "birthRate": 15
+  },
+  {
+    "country": "Virgin Islands (U.S.)",
+    "name": "美属维尔京群岛",
+    "population": 0.1,
+    "birthRate": 12
+  },
+  {
+    "country": "West Bank and Gaza",
+    "name": "西岸和加沙",
+    "population": 5,
+    "birthRate": 28
+  },
+  {
+    "country": "Yemen, Rep.",
+    "name": "也门",
+    "population": 33.7,
+    "birthRate": 31
+  },
+  {
+    "country": "Zambia",
+    "name": "赞比亚",
+    "population": 20,
+    "birthRate": 35
+  },
+  {
+    "country": "Zimbabwe",
+    "name": "津巴布韦",
+    "population": 16.3,
+    "birthRate": 31
+  }
+]

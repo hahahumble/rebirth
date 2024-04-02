@@ -66,7 +66,7 @@ const WorldMap = () => {
         roam: true, // 是否允许缩放
         scaleLimit: {
           // 设置缩放的最小和最大比例
-          min: 1,
+          min: 1.2,
           max: 5
         },
         itemStyle: {
