@@ -36,8 +36,7 @@ const Map = () => {
   const bottomNumber =
     dataList.length > 0 ? Math.min(...dataList.map(item => item.value)) : 0;
 
-  const echartsMapClick = () => {
-  };
+  const echartsMapClick = () => {};
 
   const mapOption = (mapName: any, data: any) => {
     const myChart = echarts.init(chartRef.current);

@@ -1,6 +1,3 @@
-'use client';
-
-import React from 'react';
 import { Table, Text, View } from 'reshaped';
 import { regions } from '@/lib/rebirth';
 
