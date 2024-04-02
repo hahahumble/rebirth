@@ -20,8 +20,8 @@ const Ads = () => {
       className="adsbygoogle adbanner-customize"
       style={{
         display: 'block',
-        overflow: 'hidden',
         height: '100px',
+        width: '300px',
         paddingInline: '1rem',
         paddingBottom: '2rem'
       }}
