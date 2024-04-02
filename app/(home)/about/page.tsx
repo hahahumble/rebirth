@@ -34,6 +34,15 @@ function Page() {
                 https://uahh.site/reborn
               </Actionable>
             </Text>
+            <Text variant="body-2">
+              项目 GitHub 链接：
+              <Actionable
+                className="underline hover:underline hover:text-primary hover:cursor-pointer"
+                href="https://github.com/hahahumble/rebirth"
+              >
+                投胎模拟器
+              </Actionable>
+            </Text>
           </View>
         </View>
         <View paddingBlock={8}>
