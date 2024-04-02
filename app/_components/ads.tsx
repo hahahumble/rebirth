@@ -20,14 +20,14 @@ const Ads = () => {
       className="adsbygoogle adbanner-customize"
       style={{
         display: 'block',
-        height: '100px',
-        width: '300px',
+        textAlign: 'center',
         paddingInline: '1rem',
         paddingBottom: '2rem'
       }}
       data-ad-client="ca-pub-1341437621876451"
-      data-ad-slot="2362148225"
-      data-ad-format="auto"
+      data-ad-slot="9971145124"
+      data-ad-layout="in-article"
+      data-ad-format="fluid"
       data-full-width-responsive="true"
     />
   );
