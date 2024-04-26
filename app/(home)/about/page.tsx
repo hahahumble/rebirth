@@ -7,7 +7,12 @@ function Page() {
   return (
     <>
       <View as="main">
-        <View paddingBottom={12} paddingTop={24} width={{ s: '100%', m: 130 }} as="header">
+        <View
+          paddingBottom={12}
+          paddingTop={24}
+          width={{ s: '100%', m: 130 }}
+          as="header"
+        >
           <Text weight="medium" variant="featured-3" as="h1">
             关于
           </Text>
@@ -15,7 +20,7 @@ function Page() {
             关于本网站
           </Text>
         </View>
-        <View>
+        <View as="article">
           <View paddingBlock={4}>
             <View direction="column">
               <Text variant="body-2">如果来世还在种花家，你会出生在哪里？</Text>
