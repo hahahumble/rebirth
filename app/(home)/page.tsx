@@ -188,7 +188,7 @@ function Page() {
 
   return (
     <>
-      <View paddingInline={4} paddingBottom={9}>
+      <View paddingInline={4} paddingBottom={9} className="select-none">
         <View paddingBlock={4}>
           <Map />
         </View>
