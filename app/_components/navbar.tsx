@@ -17,7 +17,7 @@ function Navbar() {
   return (
     <>
       <Hidden hide={{ s: true, m: false }}>
-        <View direction="row" gap={5} align="center">
+        <View direction="row" gap={5} align="center" as="nav">
           <Actionable href="/data">
             <Text
               variant="body-2"
