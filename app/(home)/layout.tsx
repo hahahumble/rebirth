@@ -7,7 +7,7 @@ import ResetModal from '@/components/reset-modal';
 import ShareModal from '@/components/share-modal';
 
 export const metadata: Metadata = {
-  title: '投胎模拟器「中国版」 toutai.cc',
+  title: '投胎模拟器「中国版」',
   description: '如果来世还在种花家，你会出生在哪里？ - 投胎模拟器「中国版」'
 };
 
