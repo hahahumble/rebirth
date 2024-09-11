@@ -15,21 +15,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-rs-theme="orangeTheme" data-rs-color-mode="light">
+      <body className={inter.className}>
+        <Toaster position="bottom-center" />
+        <ReshapedProvider>{children}</ReshapedProvider>
+      </body>
       <Script
         defer
-        src="https://api.pirsch.io/pirsch-extended.js"
-        id="pirschextendedjs"
-        data-code="oybHcrMr5hY3eJeFle5rcwXY2Vu131OU"
-      ></Script>
+        src="https://api.pirsch.io/pa.js"
+        id="pianjs"
+        data-code="5ViJ2vqwjdIqQChvyXX3IEooyOb5lsMQ"
+      />
       <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1341437621876451"
         crossOrigin="anonymous"
       />
-      <body className={inter.className}>
-        <Toaster position="bottom-center" />
-        <ReshapedProvider>{children}</ReshapedProvider>
-      </body>
     </html>
   );
 }
