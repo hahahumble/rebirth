@@ -20,10 +20,9 @@ export default function RootLayout({
         <ReshapedProvider>{children}</ReshapedProvider>
       </body>
       <Script
-        defer
-        src="https://api.pirsch.io/pa.js"
-        id="pianjs"
-        data-code="5ViJ2vqwjdIqQChvyXX3IEooyOb5lsMQ"
+        async
+        src="https://cdn.seline.so/seline.js"
+        data-token="325cd017ce676a9"
       />
       <Script
         async
