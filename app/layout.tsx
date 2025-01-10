@@ -19,11 +19,7 @@ export default function RootLayout({
         <Toaster position="bottom-center" />
         <ReshapedProvider>{children}</ReshapedProvider>
       </body>
-      <Script
-        async
-        src="https://cdn.seline.so/seline.js"
-        data-token="325cd017ce676a9"
-      />
+      <Script defer src="https://assets.onedollarstats.com/tracker.js" />
       <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1341437621876451"
