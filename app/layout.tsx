@@ -19,11 +19,15 @@ export default function RootLayout({
         <Toaster position="bottom-center" />
         <ReshapedProvider>{children}</ReshapedProvider>
       </body>
-      <Script defer src="https://assets.onedollarstats.com/tracker.js" />
       <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1341437621876451"
         crossOrigin="anonymous"
+      />
+      <Script
+        src="https://analytics.ahrefs.com/analytics.js"
+        data-key="PGgIXByJayJ5UrtW0a0/hQ"
+        async
       />
     </html>
   );
