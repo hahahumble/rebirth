@@ -25,9 +25,10 @@ export default function RootLayout({
         crossOrigin="anonymous"
       />
       <Script
-        src="https://analytics.ahrefs.com/analytics.js"
-        data-key="PGgIXByJayJ5UrtW0a0/hQ"
-        async
+        defer
+        src="https://api.pirsch.io/pa.js"
+        id="pianjs"
+        data-code="5ViJ2vqwjdIqQChvyXX3IEooyOb5lsMQ"
       />
     </html>
   );
