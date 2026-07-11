@@ -29,7 +29,7 @@ function Page() {
                   本网站根据中国公布的最新出生人口数据，计算出生在某地区的可能性。
                   使用了以下公式计算出生在某地区的可能性：
                 </Text>
-                <MathComponent formula="\displaystyle{\text{出生在该地区的可能性} = \frac{该地区出生人口}{全国总出生人口}}" />
+                <MathComponent formula="\displaystyle{\text{出生在该地区的可能性} = \frac{\text{该地区出生人口}}{\text{全国总出生人口}}}" />
               </View>
               <Text variant="body-2">
                 参考项目：

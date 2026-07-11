@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ["reshaped"],
+  transpilePackages: ['reshaped'],
   experimental: {
-    optimizePackageImports: ["reshaped"],
-  },
+    optimizePackageImports: ['reshaped']
+  }
 };
 
 export default nextConfig;

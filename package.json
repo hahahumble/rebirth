@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "build:themes": "reshaped theming --output app/_themes"
+    "lint": "eslint .",
+    "build:themes": "reshaped theming --output app/_themes",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@types/katex": "^0.16.7",
@@ -16,10 +17,10 @@
     "html2canvas": "^1.4.1",
     "katex": "^0.16.9",
     "lucide-react": "^0.363.0",
-    "next": "14.2.35",
+    "next": "16.2.10",
     "prettier": "^3.2.5",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "react-minimal-pie-chart": "^8.4.0",
     "react-qr-code": "^2.0.12",
     "reshaped": "^2.10.3",
@@ -29,12 +30,12 @@
   "devDependencies": {
     "typescript": "^5",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.4"
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.2.10"
   }
 }

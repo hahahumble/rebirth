@@ -4,7 +4,6 @@ import './_themes/orangeTheme/theme.css';
 import ReshapedProvider from '@/components/reshaped-provider';
 import React from 'react';
 import { Toaster } from 'sonner';
-import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -21,7 +20,7 @@ export default function RootLayout({
         <ReshapedProvider>{children}</ReshapedProvider>
         <Analytics />
       </body>
-      <Script
+      <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1341437621876451"
         crossOrigin="anonymous"

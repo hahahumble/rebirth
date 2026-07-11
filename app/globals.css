@@ -2,18 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #root {
-    height: 100%;
+  height: 100%;
 }
 
 @layer base {
-    img {
-        @apply inline-block;
-    }
+  img {
+    @apply inline-block;
+  }
+}
+
+/*
+ * reshaped ships an unlayered `a { color: primary; text-decoration: underline }`
+ * reset that beats Actionable's layered `.root { color: inherit }`. Next.js 16
+ * reordered CSS chunks so this rule now wins over Tailwind's preflight, turning
+ * every Actionable link orange + underlined. Restore the inherited color with a
+ * higher-specificity unlayered rule that wins regardless of chunk order.
+ */
+:root a {
+  color: inherit;
+  text-decoration: none;
 }

@@ -79,6 +79,9 @@ function ShareStyle1({ shareInfo }: { shareInfo: ShareInfo }) {
           <QRCode
             value="https://toutai.cc"
             bgColor="#fed8aa"
+            fgColor="#000000"
+            level="L"
+            size={256}
             className="w-12 h-12"
           />
         </View>
@@ -171,6 +174,9 @@ function ShareStyle2({ shareInfo }: { shareInfo: ShareInfo }) {
           <QRCode
             value="https://toutai.cc"
             bgColor="#f5f3ef"
+            fgColor="#000000"
+            level="L"
+            size={256}
             className="w-12 h-12"
           />
         </View>
@@ -272,6 +278,9 @@ function ShareStyle3({ shareInfo }: { shareInfo: ShareInfo }) {
           <QRCode
             value="https://toutai.cc"
             bgColor="#f5f3ef"
+            fgColor="#000000"
+            level="L"
+            size={256}
             className="w-12 h-12"
           />
         </View>
@@ -289,12 +298,12 @@ function ModalFooter({
 }) {
   return (
     <View gap={2} direction="row">
-      <View.Item columns={6}>
+      <View.Item key="cancel" columns={6}>
         <Button color="primary" variant="faded" fullWidth onClick={onCancel}>
           取消
         </Button>
       </View.Item>
-      <View.Item columns={6}>
+      <View.Item key="save" columns={6}>
         <Button color="primary" variant="solid" fullWidth onClick={onSave}>
           保存图片
         </Button>

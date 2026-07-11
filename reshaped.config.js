@@ -10,7 +10,7 @@ const config = {
           positive: '#00ca78',
           neutral: '#dbd8d5'
         }),
-        backgroundPage: { hex: "#f5f3ef" },
+        backgroundPage: { hex: '#f5f3ef' }
       },
       unit: {
         radiusSmall: {

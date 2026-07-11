@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 declare global {
   interface Window {
@@ -7,13 +7,34 @@ declare global {
 }
 
 const Ads = () => {
+  // Render the <ins> only after mount. Google's async AdSense script auto-fills
+  // any `.adsbygoogle` element (injecting an iframe + data-adsbygoogle-status)
+  // as soon as it loads, which can happen before React hydrates and causes a
+  // hydration mismatch. Keeping it out of SSR avoids that entirely.
+  const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (err) {
-      console.log(err);
-    }
+    setMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+    // Defer the ad request to the next frame so the freshly-mounted <ins> has
+    // been laid out and has a real width. Pushing immediately can hit AdSense's
+    // "No slot size for availableWidth=0" error for the fluid in-article slot.
+    const id = requestAnimationFrame(() => {
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (err) {
+        console.log(err);
+      }
+    });
+    return () => cancelAnimationFrame(id);
+  }, [mounted]);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <ins

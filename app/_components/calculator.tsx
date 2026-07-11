@@ -29,7 +29,7 @@ function Calculator() {
   return (
     <View>
       <View paddingBlock={4} direction={{ s: 'column', m: 'row' }} gap={4}>
-        <View.Item columns={{ s: 12, m: 3 }}>
+        <View.Item key="province" columns={{ s: 12, m: 3 }}>
           <FormControl>
             <FormControl.Label>出生地</FormControl.Label>
             <Select
@@ -75,7 +75,7 @@ function Calculator() {
             />
           </FormControl>
         </View.Item>
-        <View.Item columns={{ s: 12, m: 3 }}>
+        <View.Item key="gender" columns={{ s: 12, m: 3 }}>
           <FormControl>
             <FormControl.Label>性别</FormControl.Label>
             <Select
@@ -92,7 +92,7 @@ function Calculator() {
             />
           </FormControl>
         </View.Item>
-        <View.Item columns={{ s: 12, m: 3 }}>
+        <View.Item key="category" columns={{ s: 12, m: 3 }}>
           <FormControl>
             <FormControl.Label>区域</FormControl.Label>
             <Select
@@ -110,7 +110,7 @@ function Calculator() {
             />
           </FormControl>
         </View.Item>
-        <View.Item columns={{ s: 12, m: 3 }}>
+        <View.Item key="order" columns={{ s: 12, m: 3 }}>
           <FormControl>
             <FormControl.Label>第几孩</FormControl.Label>
             <Select
@@ -146,23 +146,17 @@ function Calculator() {
       </View>
       <View paddingBlock={6} justify="center" direction="column" align="center">
         <View direction="row">
-          <Text variant="body-2">
-            出生概率：{' '}
-          </Text>
+          <Text variant="body-2">出生概率： </Text>
           <Text variant="body-2" color="primary" weight="medium">
             {probability ? `${(probability * 100).toFixed(5)}%` : '0%'}
           </Text>
         </View>
         <View direction="row" gap={1}>
-          <Text variant="body-2">
-            每年大约有
-          </Text>
+          <Text variant="body-2">每年大约有</Text>
           <Text weight="medium" variant="body-2" color="primary">
             {population}
           </Text>
-          <Text  variant="body-2">
-            个这样的新生儿
-          </Text>
+          <Text variant="body-2">个这样的新生儿</Text>
         </View>
       </View>
     </View>

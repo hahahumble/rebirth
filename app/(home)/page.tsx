@@ -18,6 +18,8 @@ import FirstTimeTable from '@/components/first-time-table';
 import useShareModal from '@/lib/store/useShareModal';
 import Ads from '@/components/ads';
 
+const hasStillbirthOutcome = () => Math.random() < 0.0031;
+
 function Page() {
   const [isLoading, setIsLoading] = useState(true);
   const [isPressing, setIsPressing] = useState(false);
@@ -44,9 +46,7 @@ function Page() {
   }));
 
   const handleRebirth = () => {
-    const randomNumber = Math.floor(Math.random() * 10000);
-
-    if (randomNumber < 31) {
+    if (hasStillbirthOutcome()) {
       // 31 out of 10000 is 3.1‰
       showRebirthErrorToast();
     } else {

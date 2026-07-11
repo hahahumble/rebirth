@@ -2,7 +2,7 @@
 
 import china from '@/data/china.json';
 import * as echarts from 'echarts';
-import { useEffect, useRef, useMemo } from 'react';
+import { useCallback, useEffect, useRef, useMemo } from 'react';
 import { Loader, Text } from 'reshaped';
 import { useBirth } from '@/lib/store/useBirth';
 import { BirthResult } from '@/lib/rebirth';
@@ -36,104 +36,111 @@ const Map = () => {
   const bottomNumber =
     dataList.length > 0 ? Math.min(...dataList.map(item => item.value)) : 0;
 
-  const echartsMapClick = () => {};
+  const echartsMapClick = useCallback(() => {}, []);
 
-  const mapOption = (mapName: any, data: any) => {
-    const myChart = echarts.init(chartRef.current);
+  const mapOption = useCallback(
+    (mapName: any, data: any) => {
+      if (!chartRef.current) return;
 
-    echarts.registerMap(mapName, data);
+      const myChart =
+        echarts.getInstanceByDom(chartRef.current) ??
+        echarts.init(chartRef.current);
 
-    const latestBirthResult = useBirth.getState().getLatestBirthResult();
-    const currentProvince = latestBirthResult?.province;
+      echarts.registerMap(mapName, data);
 
-    const markPointData = currentProvince
-      ? china.features.find(
-          feature => feature.properties.name === currentProvince
-        )
-      : null;
+      const latestBirthResult = useBirth.getState().getLatestBirthResult();
+      const currentProvince = latestBirthResult?.province;
 
-    const option = {
-      visualMap: {
-        min: 0,
-        max: 5,
-        left: 'left',
-        top: 'bottom',
-        text: [topNumber.toFixed(2) + '%', bottomNumber.toFixed(2) + '%'],
-        inRange: {
-          color: ['#f5e1d6', '#ff4f04']
+      const markPointData = currentProvince
+        ? china.features.find(
+            feature => feature.properties.name === currentProvince
+          )
+        : null;
+
+      const option = {
+        visualMap: {
+          min: 0,
+          max: 5,
+          left: 'left',
+          top: 'bottom',
+          text: [topNumber.toFixed(2) + '%', bottomNumber.toFixed(2) + '%'],
+          inRange: {
+            color: ['#f5e1d6', '#ff4f04']
+          },
+          show: false
         },
-        show: false
-      },
-      geo: {
-        map: 'china',
-        roam: false,
-        zoom: 1.23,
-        label: {
-          normal: {
+        geo: {
+          map: 'china',
+          roam: false,
+          zoom: 1.23,
+          label: {
             show: true,
             fontSize: '10',
             color: '#181716',
             fontWeight: 'medium'
           },
-          emphasis: {
-            show: true,
-            color: '#181716'
-          }
-        },
-        itemStyle: {
-          normal: {
+          itemStyle: {
             borderColor: '#bebfc0',
             areaColor: '#fcfcfd'
           },
           emphasis: {
-            areaColor: '#afd8af'
-          }
-        }
-      },
-      series: [
-        {
-          name: '人口',
-          type: 'map',
-          geoIndex: 0,
-          data: dataList,
-          select: {
-            disabled: true
-          },
-          markPoint: {
-            symbol: 'pin',
-            symbolSize: 30,
-            animationDuration: 100, // Animation duration
-            itemStyle: {
-              color: '#01ca78' // Color of markPoint
+            label: {
+              show: true,
+              color: '#181716'
             },
-            data: markPointData
-              ? [
-                  {
-                    name: currentProvince,
-                    coord: markPointData.properties.cp
-                  }
-                ]
-              : []
+            itemStyle: {
+              areaColor: '#afd8af'
+            }
           }
+        },
+        series: [
+          {
+            name: '人口',
+            type: 'map',
+            geoIndex: 0,
+            data: dataList,
+            select: {
+              disabled: true
+            },
+            markPoint: {
+              symbol: 'pin',
+              symbolSize: 30,
+              animationDuration: 100, // Animation duration
+              itemStyle: {
+                color: '#01ca78' // Color of markPoint
+              },
+              data: markPointData
+                ? [
+                    {
+                      name: currentProvince,
+                      coord: markPointData.properties.cp
+                    }
+                  ]
+                : []
+            }
+          }
+        ]
+      };
+      myChart.setOption(option);
+
+      myChart.getZr().off('click');
+      myChart.getZr().on('click', params => {
+        if (params.target) {
+          myChart.on('click', echartsMapClick);
         }
-      ]
-    };
-    myChart.setOption(option);
-
-    myChart.getZr().on('click', params => {
-      if (params.target) {
-        myChart.on('click', echartsMapClick);
-      }
-    });
-  };
-
-  const loadingChina = () => {
-    mapOption('china', china);
-  };
+      });
+    },
+    [bottomNumber, dataList, echartsMapClick, topNumber]
+  );
 
   useEffect(() => {
-    loadingChina();
-  }, [dataList]);
+    mapOption('china', china);
+    return () => {
+      if (chartRef.current) {
+        echarts.getInstanceByDom(chartRef.current)?.dispose();
+      }
+    };
+  }, [mapOption]);
 
   return (
     <div
