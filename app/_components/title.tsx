@@ -1,5 +1,6 @@
 import React from 'react';
-import { Actionable, Text, View } from 'reshaped';
+import { Text, View } from 'reshaped';
+import Link from 'next/link';
 
 export function CarrotIcon({ size = 28, color = '#FF4F04' }) {
   return (
@@ -40,14 +41,14 @@ function Title() {
   return (
     <>
       <View direction="row" align="center" gap={2}>
-        <Actionable href="/">
+        <Link href="/">
           <View direction="row" align="center" gap={2}>
             <CarrotIcon />
             <Text variant="body-1" weight="medium">
               投胎模拟器
             </Text>
           </View>
-        </Actionable>
+        </Link>
         <div className="bg-[#01ca78] px-2 py-1 rounded-xl hover:cursor-default">
           <Text className="text-white" weight="medium" variant="caption-1">
             中国版

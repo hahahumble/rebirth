@@ -1,24 +1,16 @@
 'use client';
 
 import React from 'react';
-import {
-  Actionable,
-  View,
-  Text,
-  Popover,
-  Button,
-  Icon,
-  Hidden,
-  MenuItem
-} from 'reshaped';
+import { View, Text, Popover, Button, Icon, Hidden, MenuItem } from 'reshaped';
 import { Menu } from 'lucide-react';
+import Link from 'next/link';
 
 function Navbar() {
   return (
     <>
       <Hidden hide={{ s: true, m: false }}>
         <View direction="row" gap={5} align="center" as="nav">
-          <Actionable href="/data">
+          <Link href="/data">
             <Text
               variant="body-2"
               weight="medium"
@@ -26,8 +18,8 @@ function Navbar() {
             >
               数据来源
             </Text>
-          </Actionable>
-          <Actionable href="/probability">
+          </Link>
+          <Link href="/probability">
             <Text
               variant="body-2"
               weight="medium"
@@ -35,8 +27,8 @@ function Navbar() {
             >
               概率计算器
             </Text>
-          </Actionable>
-          <Actionable href="/about">
+          </Link>
+          <Link href="/about">
             <Text
               variant="body-2"
               weight="medium"
@@ -44,7 +36,7 @@ function Navbar() {
             >
               关于
             </Text>
-          </Actionable>
+          </Link>
         </View>
       </Hidden>
       <Hidden hide={{ s: false, m: true }}>
@@ -58,30 +50,36 @@ function Navbar() {
             )}
           </Popover.Trigger>
           <Popover.Content>
-            <MenuItem roundedCorners href="/data">
-              <Text
-                variant="body-3"
-                className="hover:text-primary hover:cursor-pointer"
-              >
-                数据来源
-              </Text>
-            </MenuItem>
-            <MenuItem roundedCorners href="/probability">
-              <Text
-                variant="body-3"
-                className="hover:text-primary hover:cursor-pointer"
-              >
-                概率计算器
-              </Text>
-            </MenuItem>
-            <MenuItem roundedCorners href="/about">
-              <Text
-                variant="body-3"
-                className="hover:text-primary hover:cursor-pointer"
-              >
-                关于
-              </Text>
-            </MenuItem>
+            <Link href="/data" className="block">
+              <MenuItem roundedCorners>
+                <Text
+                  variant="body-3"
+                  className="hover:text-primary hover:cursor-pointer"
+                >
+                  数据来源
+                </Text>
+              </MenuItem>
+            </Link>
+            <Link href="/probability" className="block">
+              <MenuItem roundedCorners>
+                <Text
+                  variant="body-3"
+                  className="hover:text-primary hover:cursor-pointer"
+                >
+                  概率计算器
+                </Text>
+              </MenuItem>
+            </Link>
+            <Link href="/about" className="block">
+              <MenuItem roundedCorners>
+                <Text
+                  variant="body-3"
+                  className="hover:text-primary hover:cursor-pointer"
+                >
+                  关于
+                </Text>
+              </MenuItem>
+            </Link>
           </Popover.Content>
         </Popover>
       </Hidden>
